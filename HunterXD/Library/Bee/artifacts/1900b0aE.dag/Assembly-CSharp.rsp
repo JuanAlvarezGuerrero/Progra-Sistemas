@@ -369,6 +369,18 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Resources/ExternalAssets/SpritesArchers/Scripts/Change_Sprite.cs"
+"Assets/Resources/Scripts/Actors/Actor.cs"
+"Assets/Resources/Scripts/Actors/ActorStats.cs"
+"Assets/Resources/Scripts/Actors/Player/PlayerController.cs"
+"Assets/Resources/Scripts/Actors/Player/PlayerStats.cs"
+"Assets/Resources/Scripts/Arrows/ArrowStats.cs"
+"Assets/Resources/Scripts/Arrows/BasicArrow.cs"
+"Assets/Resources/Scripts/Strategy/IActor.cs"
+"Assets/Resources/Scripts/Strategy/IArrow.cs"
+"Assets/Resources/Scripts/Strategy/IEnemy.cs"
+"Assets/Resources/Scripts/Strategy/IPlayer.cs"
+"Assets/Resources/Scripts/Strategy/IWeapon.cs"
+"Assets/Resources/Scripts/Weapon/Weapon.cs"
 -langversion:9.0
 
 /deterministic
