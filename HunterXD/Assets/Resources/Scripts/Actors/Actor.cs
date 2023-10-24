@@ -8,32 +8,28 @@ public class Actor : MonoBehaviour, IDamagable
 {
     #region PRIVATE_PROPERTIES
 
-    [SerializeField] private int _maxLife;
-    [SerializeField] private int _currentLife;
+    [SerializeField] protected ActorStats _stats;
+    [SerializeField] protected int _currentLife;
     #endregion
     
     #region PUBLIC_PROPERTIES
-    public int MaxLife => _maxLife;
-    public int CurrentLife => _currentLife;
+
+    public int MaxLife => _stats.MaxLife;
     #endregion
 
     private void Start()
     {
-        _maxLife = 100;
-        _currentLife = _maxLife;
-    }
-    private void Update()
-    {
-        
+        _currentLife = _stats.MaxLife;
     }
 
     #region IDamagable_Methods
     public void TakeDamage(int damage)
     {
         _currentLife -= damage;
+        Debug.Log("OUCH! " + _currentLife);
         if (_currentLife <= 0)
         {
-            //die
+            Debug.Log("MUERTE");
         }
     }
     #endregion

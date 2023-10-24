@@ -1,20 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : Actor, IPlayer
 {
+    private PlayerStats _playerStats; 
     #region Parameters
     private float _horizontal;
-    [SerializeField] private float _speed = 8f;
     [SerializeField] private bool _isFacingRight = true;
-
-    [SerializeField] private float _jumpingPower;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private Vector2 _dimensionBox;
-    [SerializeField] private LayerMask _groundLayer;
     private bool inFloor;
     private bool jumping;
     
@@ -31,9 +27,19 @@ public class PlayerController : Actor, IPlayer
     [SerializeField] private KeyCode _changePower = KeyCode.Mouse1;
     #endregion
 
-    
+    private void Awake()
+    {
+        _playerStats = _stats as PlayerStats;
+    }
+
     private void Update()
     {
+        
+        if (Input.GetKeyDown(_attack))
+        {
+            TakeDamage(5);
+        }
+        
         _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
         Move();
         
@@ -41,7 +47,7 @@ public class PlayerController : Actor, IPlayer
         {
             jumping = true;
         }
-        inFloor=Physics2D.OverlapBox(_groundCheck.position, _dimensionBox, 0, _groundLayer);
+        inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
         _anim.SetBool("isJumping", !inFloor);
         
         Flip();
@@ -49,7 +55,7 @@ public class PlayerController : Actor, IPlayer
 
     private void FixedUpdate()
     {
-        _rb.velocity = new Vector2(_horizontal * _speed, _rb.velocity.y);
+        _rb.velocity = new Vector2(_horizontal * _playerStats.Speed, _rb.velocity.y);
         
         if (jumping && inFloor)
         {
@@ -58,11 +64,31 @@ public class PlayerController : Actor, IPlayer
         jumping = false;
     }
 
-    public void Move()
+    #region Public_Methods
+    public void Move() // Hacer con "DO"
     {
         _horizontal = Input.GetAxisRaw("Horizontal");
     }
 
+    public void Attack() // Hacer con "DO"
+    {
+        
+    }
+
+    public void Jump() // Hacer con "DO"
+    {
+        _rb.AddForce(Vector2.up * _playerStats.JumpingPower, ForceMode2D.Impulse);
+        inFloor = false;
+    }
+
+    public void SwitchPower() // Hacer con "DO"
+    {
+        throw new System.NotImplementedException();
+    }
+    
+    #endregion
+
+    #region Private_Methods
     private void Flip()
     {
         if (_isFacingRight && _horizontal < 0f || !_isFacingRight && _horizontal > 0f)
@@ -73,26 +99,11 @@ public class PlayerController : Actor, IPlayer
             transform.localScale = localScale;
         }
     }
-
-    public void Attack()
-    {
-        
-    }
-
-    public void Jump()
-    {
-        _rb.AddForce(Vector2.up * _jumpingPower, ForceMode2D.Impulse);
-        inFloor = false;
-    }
-
-    public void SwitchPower()
-    {
-        throw new System.NotImplementedException();
-    }
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color=Color.red;
         Gizmos.DrawWireCube(_groundCheck.position, _dimensionBox);
     }
+
+    #endregion
 }

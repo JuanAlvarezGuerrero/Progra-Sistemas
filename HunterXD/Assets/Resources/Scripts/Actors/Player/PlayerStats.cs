@@ -1,8 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class PlayerStats : MonoBehaviour
+[CreateAssetMenu(fileName = "PlayerStats", menuName = "Stats/PlayerStats", order = 1)]
+public class PlayerStats : ActorStats
 {
-    
+    [SerializeField] private PlayerStatValues _statsPlayer;
+    public float Speed => _statsPlayer.Speed;
+    public float JumpingPower => _statsPlayer.JumpingPower;
+    public LayerMask GroundLayer => _statsPlayer.GroundLayer;
+
+}
+[System.Serializable]
+public struct PlayerStatValues
+{
+    public float Speed;
+    public float JumpingPower;
+    public LayerMask GroundLayer;
 }

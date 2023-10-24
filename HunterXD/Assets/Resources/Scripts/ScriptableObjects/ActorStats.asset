@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ActorStats
   m_EditorClassIdentifier: 
   _stats:
-    MaxLife: 0
+    MaxLife: 100
     MovementSpeed: 0
