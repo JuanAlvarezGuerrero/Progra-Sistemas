@@ -14,7 +14,7 @@ public class PlayerController : Actor, IPlayer
     private bool inFloor;
     private bool jumping;
     
-    public Animator _anim;
+    [SerializeField] private Animator _anim;
     [SerializeField] private Rigidbody2D _rb;
     #endregion
     
@@ -41,7 +41,7 @@ public class PlayerController : Actor, IPlayer
         }
         
         _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
-        Move();
+        
         
         if (Input.GetKeyDown(_jump))
         {
@@ -55,8 +55,8 @@ public class PlayerController : Actor, IPlayer
 
     private void FixedUpdate()
     {
-        _rb.velocity = new Vector2(_horizontal * _playerStats.Speed, _rb.velocity.y);
-        
+        _horizontal = Input.GetAxisRaw("Horizontal");
+        Move(_horizontal);
         if (jumping && inFloor)
         {
             Jump();
@@ -65,9 +65,10 @@ public class PlayerController : Actor, IPlayer
     }
 
     #region Public_Methods
-    public void Move() // Hacer con "DO"
+    public void Move(float dir) // Hacer con "DO"
     {
-        _horizontal = Input.GetAxisRaw("Horizontal");
+        _rb.velocity = new Vector2(dir * _playerStats.Speed, _rb.velocity.y);
+        
     }
 
     public void Attack() // Hacer con "DO"

@@ -15,6 +15,7 @@ public class Actor : MonoBehaviour, IDamagable
     #region PUBLIC_PROPERTIES
 
     public int MaxLife => _stats.MaxLife;
+    public int CurrentLife => _currentLife;
     #endregion
 
     private void Start()

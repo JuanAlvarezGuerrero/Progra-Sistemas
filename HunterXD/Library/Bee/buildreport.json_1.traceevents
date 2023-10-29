@@ -1,515 +1,364 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1698111986550772, "dur": 1388702, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111986551001, "dur": 1138, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111986552141, "dur": 30563, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111986582706, "dur": 544760, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111987127470, "dur": 810658, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111987938131, "dur": 1341, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111987939749, "dur": 12, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1698111986970096, "dur": 141372, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111986971071, "dur": 42671, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111987092452, "dur": 4000, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111987096455, "dur": 15000, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111987097110, "dur": 13728, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111987116071, "dur": 1487, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1698111987115553, "dur": 2056, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111987939816, "dur": 101, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025124282, "dur": 131331, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025124294, "dur": 1652, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025125947, "dur": 128523, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025254472, "dur": 1139, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025255941, "dur": 10, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1698111987168367, "dur":932, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987169306, "dur":70, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1698111987169387, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1698111987169405, "dur":188, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1698111987169610, "dur":478, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987170089, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929103, "dur":148, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929251, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929274, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929277, "dur":18, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929295, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929297, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929311, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929313, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929329, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929331, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929347, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929349, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929362, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929387, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987929396, "dur":1164, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1698111987169923, "dur":217, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987170141, "dur":2855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987173003, "dur":31151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1698111987204157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987204391, "dur":332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1698111987204746, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1698111987204808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987204813, "dur":8171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1698111987213019, "dur":120383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987333409, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987333442, "dur":6269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987339745, "dur":40225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987379976, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987380003, "dur":763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987380777, "dur":54476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987435261, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987435275, "dur":892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987436182, "dur":39090, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987475278, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987475289, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987476070, "dur":33328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987509402, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987509410, "dur":441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987509862, "dur":21032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987530898, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987530905, "dur":403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531318, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531438, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531442, "dur":327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531778, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987531871, "dur":295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987532174, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987532330, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987532335, "dur":750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987533094, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987533191, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987533196, "dur":354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987533559, "dur":22041, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987555605, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987555614, "dur":659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987556287, "dur":23997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987580291, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987580304, "dur":640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987580960, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987581057, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987581063, "dur":765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987581838, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987581912, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987581917, "dur":312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987582240, "dur":20176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987602420, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987602430, "dur":777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987603221, "dur":18384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987621609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987621616, "dur":653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987622280, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987622355, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987622359, "dur":694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623063, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623145, "dur":325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623479, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623647, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987623652, "dur":474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987624135, "dur":20897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987645034, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987645039, "dur":393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987645443, "dur":48351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987693800, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987693809, "dur":421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987694240, "dur":21354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987715598, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987715606, "dur":430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716048, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716120, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716125, "dur":332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716468, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987716745, "dur":624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987717378, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987717740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987717759, "dur":648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987718418, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987718528, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987718533, "dur":684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987719227, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987719343, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987719348, "dur":403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987719760, "dur":268, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987720029, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987720034, "dur":1179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987721225, "dur":475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987721702, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987721707, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987722942, "dur":30042, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987752988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987752996, "dur":577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987753584, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987753665, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987753670, "dur":1451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987755133, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987755260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987755266, "dur":861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756139, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756218, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756223, "dur":363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756594, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756653, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987756657, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987757696, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987757776, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987757780, "dur":304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758092, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758160, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758164, "dur":345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758518, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758723, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987758727, "dur":398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987759134, "dur":1836, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987760973, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987760980, "dur":2658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987763649, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987763728, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987763738, "dur":432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987764179, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987764390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987764395, "dur":758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987765166, "dur":793, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987765962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987765967, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767221, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767299, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767304, "dur":513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767827, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767935, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987767939, "dur":475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987768426, "dur":506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987768934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987768940, "dur":1104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987770053, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987770128, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987770134, "dur":344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987770486, "dur":838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987771329, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987771339, "dur":2175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987773532, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987773748, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987773772, "dur":552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987774361, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987774479, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987774485, "dur":1074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987775571, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987775796, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987775803, "dur":512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987776325, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987776389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987776394, "dur":305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987776706, "dur":37791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987814506, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698111987815086, "dur":607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698111987815708, "dur":113406, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987169817, "dur":280, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987170098, "dur":2897, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173003, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173578, "dur":128, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173711, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173727, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987173997, "dur":13083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1698111987187083, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1698111987187174, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987187227, "dur":304648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1698111987491910, "dur":29963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987521876, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987521881, "dur":1186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523079, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523160, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523165, "dur":478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523655, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987523747, "dur":491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987524247, "dur":1033, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987525284, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987525291, "dur":2597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987527902, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987528129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987528136, "dur":1066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987529214, "dur":31194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987560413, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987560423, "dur":568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987561004, "dur":19280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987580291, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987580304, "dur":643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987580960, "dur":35549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987616511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987616516, "dur":566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987617094, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987617240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987617245, "dur":430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987617683, "dur":20570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987638258, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987638267, "dur":444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987638723, "dur":20530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987659259, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987659272, "dur":648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987659932, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987660002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987660007, "dur":307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987660322, "dur":26896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987687221, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987687228, "dur":1725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987688967, "dur":30932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987719901, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987719907, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987721263, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987721337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987721343, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987722265, "dur":46467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987768734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987768740, "dur":1022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987769776, "dur":4310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987774088, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987774093, "dur":2941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698111987777044, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1698111987777122, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987777139, "dur":1237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1698111987778391, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1698111987778409, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987778416, "dur":897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1698111987779330, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1698111987779406, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987779415, "dur":439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1698111987779866, "dur":1229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1698111987781103, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987781117, "dur":836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1698111987781972, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.resource" }}
-,{ "pid":12345, "tid":2, "ts":1698111987781988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698111987781994, "dur":27022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.resource" }}
-,{ "pid":12345, "tid":2, "ts":1698111987809031, "dur":120087, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987169929, "dur":216, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987170145, "dur":2854, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987173003, "dur":15887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1698111987188908, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987188924, "dur":1105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1698111987190056, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1698111987190123, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987190129, "dur":279380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1698111987469549, "dur":179440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987648993, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987649002, "dur":7984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987656999, "dur":33200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987690201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987690206, "dur":5874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987696093, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987696239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987696258, "dur":570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987696838, "dur":181095, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987877941, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698111987878143, "dur":1100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698111987879256, "dur":49849, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987169835, "dur":269, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987170105, "dur":2969, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987173074, "dur":15338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1698111987188416, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987188432, "dur":558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1698111987189048, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1698111987189460, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987189479, "dur":5383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1698111987194902, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1698111987194997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987195239, "dur":1912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1698111987197181, "dur":6927, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1698111987204114, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987204125, "dur":524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1698111987204703, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1698111987204790, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987204796, "dur":260517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1698111987465346, "dur":27862, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987493213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987493221, "dur":448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987493681, "dur":28275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987521958, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987521962, "dur":554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987522527, "dur":21774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987544306, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987544317, "dur":1150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987545481, "dur":44968, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987590454, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987590465, "dur":525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987591001, "dur":53782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987644788, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987644797, "dur":544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987645353, "dur":41510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987686894, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987686901, "dur":2902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987689814, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987689912, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987689918, "dur":698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987690626, "dur":73458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987764088, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987764095, "dur":389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987764494, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987764747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987764751, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987765715, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987765785, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987765793, "dur":665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987766468, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987766610, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987766617, "dur":502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987767128, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987767245, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987767249, "dur":660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987767918, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987767993, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987768010, "dur":619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987768640, "dur":1784, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987770426, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987770431, "dur":3350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987773791, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987774008, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987774013, "dur":755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987774778, "dur":3657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987778438, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987778443, "dur":4938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":4, "ts":1698111987783410, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1698111987783428, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698111987783435, "dur":145556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1698111987929009, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":4, "ts":1698111987929012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987169828, "dur":272, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987170100, "dur":2905, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987173005, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1698111987173164, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987174346, "dur":14873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1698111987189246, "dur":8542, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1698111987197791, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987197798, "dur":367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1698111987198188, "dur":8438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1698111987206631, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987206641, "dur":515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1698111987207182, "dur":7030, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987214216, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987214346, "dur":1535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987215916, "dur":198512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987414433, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987414440, "dur":34163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987448636, "dur":46249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987494889, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987494896, "dur":489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987495396, "dur":26377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987521778, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987521786, "dur":463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987522259, "dur":94201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987616466, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987616475, "dur":653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987617137, "dur":69220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987686362, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987686371, "dur":2614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987688997, "dur":20791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987709793, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987709804, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987710670, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987710782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987710791, "dur":432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987711233, "dur":22788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987734025, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987734032, "dur":724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987734767, "dur":92944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987827716, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698111987827728, "dur":741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698111987828484, "dur":100625, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987169918, "dur":216, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987170134, "dur":2863, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987173003, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1698111987173175, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987174510, "dur":12573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1698111987187112, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1698111987187181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987187478, "dur":1442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1698111987188949, "dur":8146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1698111987197099, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987197107, "dur":394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1698111987197527, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1698111987197612, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987197627, "dur":9392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1698111987207050, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1698111987207125, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987207131, "dur":12138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1698111987219304, "dur":24706, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":6, "ts":1698111987244018, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987244030, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":6, "ts":1698111987245616, "dur":29463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD.exe" }}
-,{ "pid":12345, "tid":6, "ts":1698111987275082, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987275088, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD.exe" }}
-,{ "pid":12345, "tid":6, "ts":1698111987276168, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1698111987276262, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987276350, "dur":20228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":6, "ts":1698111987296615, "dur":55476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987352097, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987352252, "dur":513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987352778, "dur":27958, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987380739, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987380746, "dur":474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987381356, "dur":50887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987432247, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987432255, "dur":602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987432871, "dur":43066, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987475939, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987475944, "dur":1245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987477210, "dur":25642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987502875, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987502883, "dur":744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987503639, "dur":47239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987550883, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987550890, "dur":617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987551519, "dur":50902, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987602423, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987602430, "dur":780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603221, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603355, "dur":409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603774, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603898, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987603903, "dur":503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987604415, "dur":17517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987621934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987621939, "dur":439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987622388, "dur":20161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987642556, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987642567, "dur":2276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987644857, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987644942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987644947, "dur":519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987645477, "dur":30219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987675701, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987675709, "dur":502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987676223, "dur":3049, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987679278, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987679287, "dur":1731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987681034, "dur":39058, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987720094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987720098, "dur":1268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987721491, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987721553, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987721558, "dur":683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987722251, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987722521, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987722528, "dur":680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987723217, "dur":62885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987786111, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987786147, "dur":698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698111987786858, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1698111987786871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987786875, "dur":4155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791055, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791077, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791087, "dur":863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791962, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791982, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987791991, "dur":574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":6, "ts":1698111987792578, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1698111987792601, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987792607, "dur":989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":6, "ts":1698111987793613, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1698111987793690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698111987793698, "dur":394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1698111987794102, "dur":134998, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698111987931723, "dur":1695, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1698111987939956, "dur": 19646, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1698111987939735, "dur": 19897, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1698113025147870, "dur":743, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025148622, "dur":125, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1698113025148766, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1698113025148786, "dur":188, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1698113025149001, "dur":447, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025149448, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249000, "dur":126, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249126, "dur":32, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249158, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249161, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249176, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249178, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249191, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249193, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249207, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249209, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249224, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249226, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249240, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249251, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025249273, "dur":974, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1698113025149097, "dur":359, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025149458, "dur":3089, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152555, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152558, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152594, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152596, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152642, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152666, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152687, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152718, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152741, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152771, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152799, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152822, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152842, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152865, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152885, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152935, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152955, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152972, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025152991, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153004, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153023, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153043, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153065, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153077, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153097, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153107, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153125, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153135, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153155, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153165, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153185, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153196, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153215, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153226, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153245, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153259, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153278, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153289, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153307, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153324, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153344, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153355, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153374, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153384, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153403, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153413, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153431, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153441, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153462, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153471, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153489, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1698113025153500, "dur":1162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025154663, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1698113025154709, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025154730, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1698113025154743, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698113025154902, "dur":44281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.resource" }}
+,{ "pid":12345, "tid":1, "ts":1698113025199210, "dur":49791, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025149122, "dur":342, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025149464, "dur":3956, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153420, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153442, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153464, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153474, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153494, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153646, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153676, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153689, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153709, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153720, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153739, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153863, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025153885, "dur":544, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154430, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154460, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154472, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154493, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154503, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154522, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154532, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154552, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025154953, "dur":2521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1698113025157493, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1698113025157512, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025157520, "dur":21747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1698113025179294, "dur":347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1698113025179649, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698113025179662, "dur":2841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1698113025182525, "dur":66495, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025149116, "dur":344, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025149460, "dur":4093, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153554, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153617, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153636, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153647, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153666, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153676, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025153694, "dur":370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154065, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154089, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154100, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154126, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154195, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154217, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154267, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154289, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154356, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154378, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154387, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154406, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154416, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154436, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154445, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154464, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154473, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154492, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154501, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154520, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154529, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025154547, "dur":13972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025168525, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025168612, "dur":775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698113025169402, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1698113025169416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025169422, "dur":10599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1698113025180041, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1698113025180144, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698113025180174, "dur":68824, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025149140, "dur":328, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025149469, "dur":3080, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152555, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152629, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152663, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152714, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152739, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152762, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152789, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152811, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152831, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152852, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152872, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152897, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152934, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152956, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152975, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025152987, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153006, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153017, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153036, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153047, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153067, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153079, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153100, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153114, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153136, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153146, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153165, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153175, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153196, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153205, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153224, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153235, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153254, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153265, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153285, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153297, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153318, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153328, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025153412, "dur":1248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698113025154660, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025154690, "dur":790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":4, "ts":1698113025155480, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025155507, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1698113025155540, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698113025155546, "dur":93348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1698113025248911, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1698113025248913, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025149195, "dur":298, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025149493, "dur":3057, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152555, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152636, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152664, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152693, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152713, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152740, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152760, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152795, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152814, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152842, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152861, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152885, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152928, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD.exe" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152940, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152961, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152974, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025152995, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153006, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153026, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153039, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153061, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153072, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153092, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153109, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153129, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153319, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153341, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153351, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153370, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153422, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153448, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153459, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153479, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153489, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153590, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153608, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153630, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153640, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153660, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153670, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153688, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153758, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025153779, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154034, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154055, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154272, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154294, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154365, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154387, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154397, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154416, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154427, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154447, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154461, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154480, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154489, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154509, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154520, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154540, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154549, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154569, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1698113025154583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698113025155135, "dur":36381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1698113025191546, "dur":57460, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025149221, "dur":280, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025149501, "dur":3047, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152555, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152761, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152810, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152834, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152853, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152875, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152894, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152939, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152960, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152974, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025152994, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153005, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153024, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153036, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153057, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153071, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153094, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153105, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153124, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153134, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153152, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153164, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153183, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153193, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153212, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153222, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153241, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153252, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153346, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153367, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153390, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153401, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153421, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153435, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153456, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153466, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153485, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153495, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153599, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153612, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153632, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153641, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153662, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153674, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153693, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153935, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025153957, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154010, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154031, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154043, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154062, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154072, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154091, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154101, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154124, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154135, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154152, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154251, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154272, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154325, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154346, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154356, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154373, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154382, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154401, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154410, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154428, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154437, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154457, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154467, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154486, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154495, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154514, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154524, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154543, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154599, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154625, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154639, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025154914, "dur":16443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1698113025171379, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1698113025171399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698113025171406, "dur":10483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1698113025181915, "dur":67109, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698113025251198, "dur":979, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1698113025255983, "dur": 2697, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1698113025255926, "dur": 2776, "ph": "X", "name": "Write chrome-trace events", "args": {} },

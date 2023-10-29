@@ -1,5 +1,5 @@
 
 public interface IActor
 {
-    void Move();
+    void Move(float dir);
 }

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActorStats
+    - PlayerController
     - PlayerStats
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -43,7 +44,7 @@ ScriptsOnlyBuild:
     - PlayerStatValues
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/MainMenu.unity:
+    Assets/JorgeFolder/LvlTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -63,6 +64,14 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -86,6 +95,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 648}
     - Class: 114
       Script: {instanceID: 3920}
+    - Class: 114
+      Script: {instanceID: 4052}
     - Class: 114
       Script: {instanceID: 6312}
     - Class: 115
@@ -1083,5 +1094,5 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
-  - Assets/Scenes/MainMenu.unity
-  playerPath: K:/desarrollo_unity/GitHub/Progra-Sistemas/BuildHunterXD/HunterXD.exe
+  - Assets/JorgeFolder/LvlTest.unity
+  playerPath: C:/Users/Shorsho/Desktop/BUILDHUNTER/HunterXD.exe
