@@ -6,20 +6,19 @@ using UnityEngine;
 public class PlayerController : Actor, IPlayer
 {
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
-    
     private PlayerStats _playerStats; 
+
     #region Parameters
-    private float _horizontal;
     [SerializeField] private bool _isFacingRight = true;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private Vector2 _dimensionBox;
-    private bool inFloor;
-    private bool jumping;
-    
     [SerializeField] private Animator _anim;
     [SerializeField] private Rigidbody2D _rb;
+    private float _horizontal;
+    private bool inFloor;
+    private bool jumping;
     #endregion
-    
+
     #region Controls
     [Header("Controls")]
     [SerializeField] private KeyCode _moveLeft = KeyCode.A;
@@ -40,23 +39,23 @@ public class PlayerController : Actor, IPlayer
         {
             IsAlive(_currentLife);
             Attack();
+            Flip();
+
             if (Input.GetKeyDown(_attack))
             {
                 TakeDamage(5);
             }
-        
-            _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
-        
-        
+
             if (Input.GetKeyDown(_jump))
             {
                 jumping = true;
             }
+
             inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
             _anim.SetBool("isJumping", !inFloor);
-        
-            Flip();    
+            _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
         }
+
         if(_playerState == PlayerStatesEnum.Dead)
         {
             _anim.SetTrigger("isDead");
@@ -69,7 +68,6 @@ public class PlayerController : Actor, IPlayer
         if (_playerState == PlayerStatesEnum.Alive)
         {
             Vector2 dir= new Vector2( _horizontal = Input.GetAxisRaw("Horizontal"), _rb.velocity.y);
-            
             Move(dir);
             if (jumping && inFloor)
             {
@@ -106,7 +104,7 @@ public class PlayerController : Actor, IPlayer
 
     private void IsAlive(int currentLife)
     {
-        if (currentLife < 0)
+        if (currentLife <= 0)
         {
             _playerState = PlayerStatesEnum.Dead;
         }
@@ -124,11 +122,11 @@ public class PlayerController : Actor, IPlayer
             transform.localScale = localScale;
         }
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color=Color.red;
         Gizmos.DrawWireCube(_groundCheck.position, _dimensionBox);
     }
-
     #endregion
 }
