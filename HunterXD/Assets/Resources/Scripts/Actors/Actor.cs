@@ -33,5 +33,6 @@ public class Actor : MonoBehaviour, IDamagable
             Debug.Log("MUERTE");
         }
     }
+    
     #endregion
 }

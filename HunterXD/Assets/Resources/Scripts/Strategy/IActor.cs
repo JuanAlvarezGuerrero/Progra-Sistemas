@@ -1,5 +1,8 @@
 
+using UnityEngine;
+
 public interface IActor
 {
-    void Move(float dir);
+    void Move(Vector2 dir);
+    void Attack();
 }

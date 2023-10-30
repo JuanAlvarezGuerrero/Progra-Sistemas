@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : Actor, IPlayer
 {
+    private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
+    
     private PlayerStats _playerStats; 
     #region Parameters
     private float _horizontal;
@@ -34,46 +36,61 @@ public class PlayerController : Actor, IPlayer
 
     private void Update()
     {
-        
-        if (Input.GetKeyDown(_attack))
+        if (_playerState == PlayerStatesEnum.Alive)
         {
-            TakeDamage(5);
+            IsAlive(_currentLife);
+            Attack();
+            if (Input.GetKeyDown(_attack))
+            {
+                TakeDamage(5);
+            }
+        
+            _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
+        
+        
+            if (Input.GetKeyDown(_jump))
+            {
+                jumping = true;
+            }
+            inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
+            _anim.SetBool("isJumping", !inFloor);
+        
+            Flip();    
+        }
+        if(_playerState == PlayerStatesEnum.Dead)
+        {
+            _anim.SetTrigger("isDead");
         }
         
-        _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
-        
-        
-        if (Input.GetKeyDown(_jump))
-        {
-            jumping = true;
-        }
-        inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
-        _anim.SetBool("isJumping", !inFloor);
-        
-        Flip();
     }
 
     private void FixedUpdate()
     {
-        _horizontal = Input.GetAxisRaw("Horizontal");
-        Move(_horizontal);
-        if (jumping && inFloor)
+        if (_playerState == PlayerStatesEnum.Alive)
         {
-            Jump();
+            Vector2 dir= new Vector2( _horizontal = Input.GetAxisRaw("Horizontal"), _rb.velocity.y);
+            
+            Move(dir);
+            if (jumping && inFloor)
+            {
+                Jump();
+            }
+            jumping = false;
         }
-        jumping = false;
     }
 
     #region Public_Methods
-    public void Move(float dir) // Hacer con "DO"
+    public void Move(Vector2 dir) // Hacer con "DO"
     {
-        _rb.velocity = new Vector2(dir * _playerStats.Speed, _rb.velocity.y);
-        
+        _rb.velocity = new Vector2(dir.x * _playerStats.Speed, _rb.velocity.y);
     }
 
     public void Attack() // Hacer con "DO"
     {
-        
+        if (Input.GetKeyDown(_attack))
+        {
+            _anim.SetTrigger("isAttacking");
+        }
     }
 
     public void Jump() // Hacer con "DO"
@@ -86,7 +103,14 @@ public class PlayerController : Actor, IPlayer
     {
         throw new System.NotImplementedException();
     }
-    
+
+    private void IsAlive(int currentLife)
+    {
+        if (currentLife < 0)
+        {
+            _playerState = PlayerStatesEnum.Dead;
+        }
+    }
     #endregion
 
     #region Private_Methods
