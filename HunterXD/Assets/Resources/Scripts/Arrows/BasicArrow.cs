@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider),typeof(Rigidbody))]
 public class BasicArrow : MonoBehaviour, IArrow
 {
     public float Speed => _speed;
@@ -23,6 +24,7 @@ public class BasicArrow : MonoBehaviour, IArrow
     {
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
+        //Init();
     }
 
     private void Update()
@@ -35,7 +37,7 @@ public class BasicArrow : MonoBehaviour, IArrow
 
     public void Travel()
     {
-        transform.position += transform.forward * Time.deltaTime * _speed;
+        transform.position += transform.right * Time.deltaTime * _speed;
     }
 
     public void Init()

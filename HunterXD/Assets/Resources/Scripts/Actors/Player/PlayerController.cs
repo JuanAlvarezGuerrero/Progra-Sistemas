@@ -6,8 +6,9 @@ using UnityEngine;
 public class PlayerController : Actor, IPlayer
 {
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
-    private PlayerStats _playerStats; 
-
+    private PlayerStats _playerStats;
+    [SerializeField] private Weapon _weapon;
+    
     #region Parameters
     [SerializeField] private bool _isFacingRight = true;
     [SerializeField] private Transform _groundCheck;
@@ -31,6 +32,7 @@ public class PlayerController : Actor, IPlayer
     private void Awake()
     {
         _playerStats = _stats as PlayerStats;
+        //_weapon.GetComponent<Weapon>();
     }
 
     private void Update()
@@ -88,6 +90,7 @@ public class PlayerController : Actor, IPlayer
         if (Input.GetKeyDown(_attack))
         {
             _anim.SetTrigger("isAttacking");
+            _weapon.Shoot();
         }
     }
 
