@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JorgeFolder/LvlTest.unity
     guid: ad845df8803e9d749b031a54bfea5701
+  - enabled: 1
+    path: Assets/Scenes/Level-1.unity
+    guid: b28fae1e30db73c4f9cfe39da1c3fb67
   m_configObjects: {}
