@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 506
     height: 324
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -550,23 +550,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/JuanFolder/SoundScript
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/JuanFolder/SoundScript
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e06c0000
-    m_LastClickedID: 27872
-    m_ExpandedIDs: 00000000c26c000000ca9a3b
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: d6850000
+    m_LastClickedID: 34262
+    m_ExpandedIDs: 00000000da6c0000ec6c0000f06c00004a6e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c26c0000c46c0000c66c0000
+    m_ExpandedIDs: 00000000da6c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000a630000ec9b0000ee9b0000f29b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -726,21 +726,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8ea5ffffe0a6ffff5aa7ffffc8a8ffff20a9ffff6ca9ffff3eacffffd2acffffe4b5ffffbcb6fffff8b8ffff86b9ffff66bfffffb6bfffff70c0ffffbac0ffff94c1ffff46c2ffffc4c3ffff38c5ffffc2c7ffff8ccaffff92cbffffdccdfffff0d2ffffeed3ffff3ad4ffffa4d5fffff0d5ffff48d6ffff98d6fffff6d6fffffcd7ffff32d8ffff7ed8ffff62f1ffff9ef2ffff2afbffff7c5e00009c5e0000bc850000c4850000528600005a86000072860000f48c0000208d0000408d0000fa8e0000e88f00001490000034900000a6900000f2900000029400006a950000b8950000ee9600000e970000349700008c9a0000a89a0000da9a0000fe9d00004c9e0000ee9e00001a9f00003a9f0000ac9f0000fa9f000002a100002ea100004ea1000008a3000056a300005ca8000088a80000a8a800001aa9000068a9000028ac000054ac000074ac000002ad00009cad0000bcad00007cb500006ebc0000
+      m_ExpandedIDs: 2afbffff605e00008c5e0000ac5e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: OnBottonSound
+        m_OriginalName: OnBottonSound
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -4246
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -1084,9 +1084,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 309.22223
+    m_Target: 385.34717
     speed: 2
-    m_Value: 309.22223
+    m_Value: 385.34717
   m_Ortho:
     m_Target: 1
     speed: 2
