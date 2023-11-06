@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ArrowStats : MonoBehaviour
+[CreateAssetMenu(fileName = "ArrowStats", menuName = "Stats/ArrowStats", order = 5)]
+public class ArrowStats : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private ArrowStatValues _statsArrow;
+    public float Speed => _statsArrow.Speed;
+    public float LifeTime => _statsArrow.LifeTime;
+    public LayerMask HitteableLayer => _statsArrow.HitteableLayer;
+}
+[System.Serializable]
+public struct ArrowStatValues
+{
+    public float Speed;
+    public float LifeTime;
+    public LayerMask HitteableLayer;
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerController : Actor, IPlayer
@@ -83,6 +84,7 @@ public class PlayerController : Actor, IPlayer
     public void Move(Vector2 dir) // Hacer con "DO"
     {
         _rb.velocity = new Vector2(dir.x * _playerStats.Speed, _rb.velocity.y);
+        
     }
 
     public void Attack() // Hacer con "DO"
@@ -120,9 +122,10 @@ public class PlayerController : Actor, IPlayer
         if (_isFacingRight && _horizontal < 0f || !_isFacingRight && _horizontal > 0f)
         {
             _isFacingRight = !_isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+            // Vector3 localScale = transform.localScale;
+            // localScale.x *= -1f;
+            // transform.localScale = localScale;
         }
     }
 

@@ -5,14 +5,20 @@ using UnityEngine;
 [RequireComponent(typeof(Collider),typeof(Rigidbody))]
 public class BasicArrow : MonoBehaviour, IArrow
 {
-    public float Speed => _speed;
-    public float LifeTime => _lifeTime;
-    public LayerMask HitteableLayer => _hitteableLayer;
+    #region SOParameters
+
+    [SerializeField] private ArrowStats _arrowStats;
+    
+
+    #endregion
+    public float Speed => _arrowStats.Speed;
+    public float LifeTime => _arrowStats.LifeTime;
+    public LayerMask HitteableLayer => _arrowStats.HitteableLayer;
     public IWeapon Owner => _owner;
 
-    [SerializeField] private float _speed = 10f;
-    [SerializeField] private float _lifeTime = 5f;
-    [SerializeField] private LayerMask _hitteableLayer;
+    // [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _lifeTime;
+    // [SerializeField] private LayerMask _hitteableLayer;
     [SerializeField] private IWeapon _owner;
 
     private Collider _collider;
@@ -22,6 +28,7 @@ public class BasicArrow : MonoBehaviour, IArrow
 
     private void Start()
     {
+        _lifeTime = LifeTime;
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
         //Init();
@@ -37,7 +44,7 @@ public class BasicArrow : MonoBehaviour, IArrow
 
     public void Travel()
     {
-        transform.position += transform.right * Time.deltaTime * _speed;
+        transform.position += transform.right * Time.deltaTime * Speed;
     }
 
     public void Init()

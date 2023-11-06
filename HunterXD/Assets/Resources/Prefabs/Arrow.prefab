@@ -99,11 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6eade4affb553a4990307c6ea0ab4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _arrowStats: {fileID: 11400000, guid: 4bf208c826e74034e9de30eb5c5e2b8c, type: 2}
   _lifeTime: 5
-  _hitteableLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &4243321481859930062
 Rigidbody2D:
   serializedVersion: 4
