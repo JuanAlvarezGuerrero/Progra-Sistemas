@@ -27,7 +27,7 @@ public class Actor : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         _currentLife -= damage;
-        Debug.Log("OUCH! " + _currentLife);
+        //Debug.Log("OUCH! " + _currentLife);
         if (_currentLife <= 0)
         {
             Debug.Log("MUERTE");

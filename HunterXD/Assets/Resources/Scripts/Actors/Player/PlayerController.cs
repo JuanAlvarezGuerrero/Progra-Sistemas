@@ -123,9 +123,6 @@ public class PlayerController : Actor, IPlayer
         {
             _isFacingRight = !_isFacingRight;
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-            // Vector3 localScale = transform.localScale;
-            // localScale.x *= -1f;
-            // transform.localScale = localScale;
         }
     }
 
