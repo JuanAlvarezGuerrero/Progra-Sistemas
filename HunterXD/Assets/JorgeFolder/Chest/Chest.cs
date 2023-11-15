@@ -16,7 +16,8 @@ public class Chest : MonoBehaviour
         _canOpen = false;
         _chestClosed = true;
         
-        _itemFactory = new ItemFactory();
+        //ItemChest currentArrow = Stats.Arrow.GetComponent<BasicArrow>();
+        //_itemFactory = new ItemFactory();
     }
 
     private void SpawnItem()

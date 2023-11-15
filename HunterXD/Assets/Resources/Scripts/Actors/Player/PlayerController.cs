@@ -51,7 +51,7 @@ public class PlayerController : Actor, IPlayer
 
             if (Input.GetKeyDown(_attack))
             {
-                TakeDamage(5);
+                //TakeDamage(5);
             }
 
             if (Input.GetKeyDown(_jump))
