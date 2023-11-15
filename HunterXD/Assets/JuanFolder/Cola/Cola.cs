@@ -36,7 +36,6 @@ public class Cola : ColaTDA
     {
         return a[indice - 1];
     }
-
 }
 public interface ColaTDA
 {

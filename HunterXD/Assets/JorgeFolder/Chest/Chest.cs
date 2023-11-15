@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
+    private ItemFactory _itemFactory;
     private Animator _anim;
     public bool _chestClosed;
     public bool _canOpen;
@@ -14,6 +15,13 @@ public class Chest : MonoBehaviour
         _anim = GetComponent<Animator>();
         _canOpen = false;
         _chestClosed = true;
+        
+        _itemFactory = new ItemFactory();
+    }
+
+    private void SpawnItem()
+    {
+        IProduct item = _itemFactory.CreateProduct();
     }
 
     private void Update()
