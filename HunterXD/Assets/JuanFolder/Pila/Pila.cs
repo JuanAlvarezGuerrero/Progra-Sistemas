@@ -2,63 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pila : PilaTDA
+public class Pila : MonoBehaviour, PilaTDA
 {
     // arreglo en donde se guarda la informacion
-    int[] a;
+    [SerializeField] private List<GameObject> objetosPuzzle = new List<GameObject>();
     // cantidad de anillos de datos de la pila
-    int cantidad_datos_max;
-
-    public void InicializarPila(int cantidad)
+    int cantidad_datos_max=3;
+    int indice;
+    
+    public void InicializarPila()
     {
-        cantidad_datos_max = cantidad;
-        a = new int[cantidad];
-        a[0] = 0;
+        objetosPuzzle = new List<GameObject>(cantidad_datos_max);
+        indice = 0;
     }
 
-    public int Apilar(int x)
+    public void Apilar(GameObject elemento)
     {
-        if (a[0] <= cantidad_datos_max)
+        if (!PilaLlena())
         {
-            a[0]++;
-            a[a[0]] = x;
-            return a[0];
+            indice++;
+            objetosPuzzle[indice] = elemento;
         }
         else
         {
-            return 0;
+            Debug.Log("La pila está llena");
         }
 
     }
-    public int Desapilar()
+    public void Desapilar()
     {
         if (!PilaVacia())
         {
-            a[0]--;
-            return a[0];
+            indice--;
         }
         else
         {
-            return 0;
+            return;
         }
 
     }
 
     public bool PilaVacia()
     {
-        return (a[0] == 0);
+        return indice==0;
     }
 
-    public int Tope()
+    public bool PilaLlena()
     {
-        return a[a[0]];
+        return indice==cantidad_datos_max-1;
     }
 }
 public interface PilaTDA
 {
-    void InicializarPila(int cantidad); //siempre que la pila este inicializada
-    int Apilar(int x); //siempre que la pila este inicializada y no este vacia
-    int Desapilar(); //siempre que la pila este inicializada
+    void InicializarPila(); //siempre que la pila este inicializada
+    void Apilar(GameObject elemento); //siempre que la pila este inicializada y no este vacia
+    void Desapilar(); //siempre que la pila este inicializada
     bool PilaVacia(); //siempre que la pila este inicializada y no este vacia
-    int Tope();
+    bool PilaLlena();
 }

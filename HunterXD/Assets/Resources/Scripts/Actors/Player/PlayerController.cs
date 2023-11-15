@@ -8,6 +8,7 @@ public class PlayerController : Actor, IPlayer
 {
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
     private PlayerStats _playerStats;
+    private Pila pila;
     [SerializeField] private Weapon _weapon;
     
     #region Parameters
@@ -132,4 +133,13 @@ public class PlayerController : Actor, IPlayer
         Gizmos.DrawWireCube(_groundCheck.position, _dimensionBox);
     }
     #endregion
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("ObjetoPuzzle"))
+        {
+            Debug.Log("Objeto Puzzle");
+            pila.Apilar(collision.gameObject);
+        }
+    }
 }
