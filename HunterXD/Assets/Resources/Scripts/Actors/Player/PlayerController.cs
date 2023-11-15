@@ -8,6 +8,7 @@ public class PlayerController : Actor, IPlayer
 {
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
     private PlayerStats _playerStats;
+    [SerializeField] private Pila pila;
     [SerializeField] private Weapon _weapon;
     
     #region Parameters
@@ -33,9 +34,13 @@ public class PlayerController : Actor, IPlayer
     private void Awake()
     {
         _playerStats = _stats as PlayerStats;
+        pila.InicializarPila(3);
         //_weapon.GetComponent<Weapon>();
     }
-
+    //private void Start()
+    //{
+    //    pila.InicializarPila(3);
+    //}
     private void Update()
     {
         if (_playerState == PlayerStatesEnum.Alive)
@@ -54,6 +59,10 @@ public class PlayerController : Actor, IPlayer
                 jumping = true;
             }
 
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                pila.Desapilar();
+            }
             inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
             _anim.SetBool("isJumping", !inFloor);
             _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
@@ -132,4 +141,13 @@ public class PlayerController : Actor, IPlayer
         Gizmos.DrawWireCube(_groundCheck.position, _dimensionBox);
     }
     #endregion
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("ObjetoPuzzle"))
+        {
+            Debug.Log("Objeto Puzzle");
+            pila.Apilar(collision.gameObject);
+        }
+    }
 }
