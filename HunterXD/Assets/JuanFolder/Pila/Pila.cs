@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pila : MonoBehaviour, PilaTDA
 {
     int cantidad_datos_max=3;
-    int indice;
+    [SerializeField] private int indice;
     [SerializeField] private GameObject[] objetosPuzzle;
     public void InicializarPila(int cantidad)
     {
@@ -36,11 +36,12 @@ public class Pila : MonoBehaviour, PilaTDA
     {
         if (!PilaVacia())
         {
+            //objetosPuzzle[0] = null;
             for (int i = 0; i < indice - 1; i++)
             {
                 objetosPuzzle[i] = objetosPuzzle[i + 1];
-                //objetosPuzzle[i] = null;
             }
+            objetosPuzzle[indice-1] = null;
             indice--;
             return indice;
         }
