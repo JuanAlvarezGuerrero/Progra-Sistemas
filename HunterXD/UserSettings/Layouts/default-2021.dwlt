@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 318
     height: 526
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -404,7 +404,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0efbffff945f0000
+      m_ExpandedIDs: 8af1ffff58f3ffff0efbffff1c600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -709,9 +709,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 50.39971, y: 0.8983652, z: -0.96995795}
+    m_Target: {x: 956.08685, y: 547.7113, z: 3.067819}
     speed: 2
-    m_Value: {x: 50.39971, y: 0.8983652, z: -0.96995795}
+    m_Value: {x: 956.08685, y: 547.7113, z: 3.067819}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -762,9 +762,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.861687
+    m_Target: 572.0702
     speed: 2
-    m_Value: 12.861687
+    m_Value: 572.0702
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -829,23 +829,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/JuanFolder/ABB
+    - Assets/JuanFolder/UI
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/JuanFolder/ABB
+  - Assets/JuanFolder/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 8}
-    m_SelectedIDs: 68720000
-    m_LastClickedID: 29288
-    m_ExpandedIDs: 000000008262000084620000866200008862000000ca9a3b
+    scrollPos: {x: 0, y: 20}
+    m_SelectedIDs: c4720000
+    m_LastClickedID: 29380
+    m_ExpandedIDs: 000000008a6200008c6200008e620000906200008a7200009e720000ae72000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -873,7 +873,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082620000846200008662000088620000
+    m_ExpandedIDs: 000000008a6200008c6200008e62000090620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
