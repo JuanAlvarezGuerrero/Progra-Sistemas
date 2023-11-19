@@ -9,8 +9,10 @@ public class PlayerController : Actor, IPlayer
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
     private PlayerStats _playerStats;
     [SerializeField] private Pila pila;
+    [SerializeField] private Quicksort quicksort;
     [SerializeField] private Weapon _weapon;
-    
+    [SerializeField] private GameObject[] objetosPrueba;
+
     #region Parameters
     [SerializeField] private bool _isFacingRight = true;
     [SerializeField] private Transform _groundCheck;
@@ -62,6 +64,10 @@ public class PlayerController : Actor, IPlayer
             if (Input.GetKeyDown(KeyCode.P))
             {
                 pila.Desapilar();
+            }
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                quicksort.RunQuicksort(objetosPrueba, 0, objetosPrueba.Length - 1);
             }
             inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
             _anim.SetBool("isJumping", !inFloor);

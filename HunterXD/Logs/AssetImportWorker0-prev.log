@@ -15,7 +15,7 @@ C:/Users/Usuario/Documents/GitHub/Progra-Sistemas/HunterXD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65209
+51037
 Successfully changed project path to: C:/Users/Usuario/Documents/GitHub/Progra-Sistemas/HunterXD
 C:/Users/Usuario/Documents/GitHub/Progra-Sistemas/HunterXD
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Usuario/Documents/GitHub/Progra-Sistemas/HunterXD
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1896] Host "[IP] 192.168.0.153 [Port] 0 [Flags] 2 [Guid] 3202702545 [EditorId] 3202702545 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QE2QT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20772] Host "[IP] 192.168.0.153 [Port] 0 [Flags] 2 [Guid] 1923969002 [EditorId] 1923969002 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QE2QT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1896] Host "[IP] 192.168.0.153 [Port] 0 [Flags] 2 [Guid] 3202702545 [EditorId] 3202702545 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QE2QT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20772] Host "[IP] 192.168.0.153 [Port] 0 [Flags] 2 [Guid] 1923969002 [EditorId] 1923969002 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QE2QT2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 118.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 108.18 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.29f1 (204d6dc9ae1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Resources/UnitySubsystems
@@ -67,75 +67,75 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010930 seconds.
+Registered in 0.009345 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 109.22 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.764 seconds
+- Completed reload, in  0.706 seconds
 Domain Reload Profiling:
-	ReloadAssembly (766ms)
-		BeginReloadAssembly (112ms)
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (525ms)
-			LoadAssemblies (109ms)
+		EndReloadAssembly (502ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (120ms)
+			SetupTypeCache (115ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (313ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (131ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (129ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007534 seconds.
+Registered in 0.008183 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 107.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.409 seconds
+- Completed reload, in  1.241 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1410ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1242ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1147ms)
-			LoadAssemblies (107ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (988ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (324ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (596ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (532ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
+				RefreshPlugins (107ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -144,12 +144,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4003 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 48 unused Assets / (119.3 KB). Loaded Objects now: 4464.
+Unloading 4006 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (119.3 KB). Loaded Objects now: 4467.
 Memory consumption went from 153.8 MB to 153.7 MB.
-Total: 2.896300 ms (FindLiveObjects: 0.290600 ms CreateObjectMapping: 0.261700 ms MarkObjects: 2.253100 ms  DeleteObjects: 0.089900 ms)
+Total: 3.041600 ms (FindLiveObjects: 0.280600 ms CreateObjectMapping: 0.320700 ms MarkObjects: 2.348300 ms  DeleteObjects: 0.091100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,286 +164,193 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14271.328143 seconds.
-  path: Assets/JuanFolder/Dijsktra
-  artifactKey: Guid(055c0a83cf84c904f993d3007508a6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijsktra using Guid(055c0a83cf84c904f993d3007508a6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170d23656cc893839a04017378a3fb47') in 0.009835 seconds 
+  Time since last request: 43656.749462 seconds.
+  path: Assets/JuanFolder/ABB
+  artifactKey: Guid(887a12fe53ffeaa4dbe3147d39c6ea50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB using Guid(887a12fe53ffeaa4dbe3147d39c6ea50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4004b4d81dbac30dd2bb19ca88d8423f') in 0.008217 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.083586 seconds.
-  path: Assets/JuanFolder/Dijkstra
-  artifactKey: Guid(055c0a83cf84c904f993d3007508a6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra using Guid(055c0a83cf84c904f993d3007508a6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cfe5910c7812133243dde4844c6b08') in 0.003019 seconds 
+  Time since last request: 17.357306 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2539d01189ac92c08769b81fb7fcfd41') in 0.044325 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.317383 seconds.
-  path: Assets/JuanFolder/Grafo
-  artifactKey: Guid(239a3d70c7e18434c907e4e01bf79b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Grafo using Guid(239a3d70c7e18434c907e4e01bf79b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28bf167d5d203fbfb12c74d66a09960') in 0.004775 seconds 
+  Time since last request: 72.932383 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efc5cf452c4502c45310a92a8071681') in 0.007136 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.073018 seconds.
-  path: Assets/JuanFolder/Grafo/GrafoMA.cs
-  artifactKey: Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Grafo/GrafoMA.cs using Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc4c23e5e094afff398d06aae27aa8c') in 0.043553 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007837 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1260ms)
-		BeginReloadAssembly (204ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (925ms)
-			LoadAssemblies (139ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (416ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3980 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (92.7 KB). Loaded Objects now: 4480.
-Memory consumption went from 151.3 MB to 151.2 MB.
-Total: 3.213100 ms (FindLiveObjects: 0.282000 ms CreateObjectMapping: 0.235400 ms MarkObjects: 2.656900 ms  DeleteObjects: 0.037800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 39.463721 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b62e348d3489e93bf34e7ebea36789f') in 0.002507 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 223.668922 seconds.
-  path: Assets/JuanFolder/Grafo/GrafoMA.cs
-  artifactKey: Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Grafo/GrafoMA.cs using Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488779f36b386d354182c837a4542e8f') in 0.020202 seconds 
+  Time since last request: 17.262578 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c62ec5581c27a99e7a6d80ed33ba07a') in 0.002908 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.579911 seconds.
-  path: Assets/JuanFolder/Grafo/GrafoMA.cs
-  artifactKey: Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Grafo/GrafoMA.cs using Guid(a155c83f93bed20498e1306c0096284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8c0199d4ae20a418b930bf3e94dc9d') in 0.002881 seconds 
+  Time since last request: 7.666165 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a774c3882ebc5a2c92e5e1fd1a53df9') in 0.002296 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 261.817288 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA
-  artifactKey: Guid(df0489891a1c41244b20eae8ee930919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA using Guid(df0489891a1c41244b20eae8ee930919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cdd5ea9b8e1f2b1211a724f487c039') in 0.003727 seconds 
+  Time since last request: 171.332478 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee6956329aea01d45d1451ea550384b') in 0.002631 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.983687 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA/ConjuntoTDA.cs
-  artifactKey: Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA/ConjuntoTDA.cs using Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e4a9516cb1fc44d1514429a117ae38') in 0.006282 seconds 
+  Time since last request: 40.104793 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890d050ddb3741cb3a5e3a0ca9038690') in 0.004139 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 64.257219 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs
-  artifactKey: Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs using Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e4508546afdcabe0ae3caf2cb04363') in 0.002697 seconds 
+  Time since last request: 8.678436 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a975177d98fcd219c8e97d4216275b7') in 0.002454 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.680936 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs
-  artifactKey: Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs using Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c74ad5434590260fce10b52a88afdf') in 0.007133 seconds 
+  Time since last request: 21.408822 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c793421374d34da54fc9d80b9fc3d199') in 0.002596 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.884942 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs
-  artifactKey: Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs using Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ace2d0240f5ec54aa0c0df8f15db923') in 0.003022 seconds 
+  Time since last request: 4.544115 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e5e23a4d437452c742790bf1f87e79') in 0.003057 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.023414 seconds.
-  path: Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs
-  artifactKey: Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/ConjuntoTDA/ConjuntoLD.cs using Guid(e66cee62645fdce4f948d29a7be2b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105ffa893db853de4be2061de3519d15') in 0.002600 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008266 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.082 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1083ms)
-		BeginReloadAssembly (175ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (70ms)
-		EndReloadAssembly (803ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (371ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.61 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3981 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (92.7 KB). Loaded Objects now: 4496.
-Memory consumption went from 151.3 MB to 151.2 MB.
-Total: 3.798600 ms (FindLiveObjects: 0.270000 ms CreateObjectMapping: 0.192800 ms MarkObjects: 3.298200 ms  DeleteObjects: 0.036500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 3.917692 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c529f52bc64c0997176f23a88d960014') in 0.004488 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 110.066631 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94eec2898abfac68939fd0ce7a9cfe1c') in 0.009091 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006875 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Usuario\Documents\GitHub\Progra-Sistemas\HunterXD\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.051 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1052ms)
-		BeginReloadAssembly (148ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (795ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (366ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.30 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3982 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (92.6 KB). Loaded Objects now: 4512.
-Memory consumption went from 151.4 MB to 151.3 MB.
-Total: 2.634600 ms (FindLiveObjects: 0.272000 ms CreateObjectMapping: 0.194000 ms MarkObjects: 2.136500 ms  DeleteObjects: 0.031400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 2.952982 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978adf13bff5c698801dc93e022a6f45') in 0.002602 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 154.184276 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4e639eb58179edb3fa89599e53201c') in 0.007856 seconds 
+  Time since last request: 7.782725 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4203349f8e188bd4abc24192ce05b8d4') in 0.002810 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 107.633424 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f31e380e52231de4288c4a27684f53d') in 0.002809 seconds 
+  Time since last request: 71.122030 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dae0ff24ea0200353cc0ae1a836be15') in 0.004315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.184993 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa16ce2c270faef8c3011336ffae86da') in 0.003296 seconds 
+  Time since last request: 190.582646 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953422e4e8aa3e3c749661ab941ef54d') in 0.002353 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.025504 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7ea2ae9212a45e2b0df0d4abc60aab') in 0.002281 seconds 
+  Time since last request: 32.666525 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f60e73cc49e9a17f878bb52249bf41') in 0.002214 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 119.288312 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4205040d922782bca54c571a357d2ba') in 0.003230 seconds 
+  Time since last request: 29.155806 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d125ef94e66baa86d8367617d743623') in 0.002423 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 727.423459 seconds.
-  path: Assets/JuanFolder/Dijkstra/Dijkstra.cs
-  artifactKey: Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JuanFolder/Dijkstra/Dijkstra.cs using Guid(2c9c162c85126a04eadb5d9a94916306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9b6026ff25c60bba8ae549781d3066') in 0.003094 seconds 
+  Time since last request: 10.420542 seconds.
+  path: Assets/JuanFolder/ABB/ABB.cs
+  artifactKey: Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/ABB/ABB.cs using Guid(58aae1623c6b73a4c9b9d1549f90998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7ea1eca23b312c39dcd2214fd90fc4') in 0.002768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1616.146498 seconds.
+  path: Assets/JuanFolder/Quicksort
+  artifactKey: Guid(f920a25ac34907646943e700a6e282a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort using Guid(f920a25ac34907646943e700a6e282a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc223377f36f0063118e83750e3464b1') in 0.003684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.629730 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051dc012255f1c2c4ae5b5ca9681c35a') in 0.003395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.350530 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48bea67fb96b9ea71c49acda31bda93') in 0.003419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.399192 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9cfc51db6e7f52a955640cc0e71aa64') in 0.002515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.448627 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0629582a3718422795adff02d2b690c5') in 0.002956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.523748 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff98a3397ff2afd1add56c773424d0e0') in 0.003387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.643700 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707af6ab23a23427baa95786392f9b72') in 0.002392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.182859 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46df15c1fc07377b1f438a2748d3e9c0') in 0.002492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.024854 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c7d98d2c44c277d26e7cae231cf508') in 0.002825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.930724 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262319445e50f9ba65a95e0b5e998c5c') in 0.003342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.827985 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b01809fb1c3e6bfa42bd97342ee5be') in 0.002464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.790548 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40fe1450e3c5890da7c49b8a4e56c3a') in 0.002478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.610886 seconds.
+  path: Assets/JuanFolder/Quicksort/Quicksort.cs
+  artifactKey: Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JuanFolder/Quicksort/Quicksort.cs using Guid(4c6f4ae054247a14aa2f3122fae9712a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b066318ad3cf515270cec5f46cfa5c') in 0.002947 seconds 

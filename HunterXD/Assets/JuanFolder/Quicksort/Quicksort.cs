@@ -34,7 +34,7 @@ public class Quicksort : MonoBehaviour
  
             Console.ReadKey();
      */
-    static public void RunQuicksort(Player[] arr, int left, int right)
+    public void RunQuicksort(GameObject[] arr, int left, int right)
     {
         int pivot;
         if (left < right)
@@ -53,27 +53,27 @@ public class Quicksort : MonoBehaviour
             }
         }
     }
-    static public int Partition(Player[] arr, int left, int right)
+    public int Partition(GameObject[] arr, int left, int right)
     {
-        int pivot;
+        float pivot;
         int aux = (left + right) / 2;   //tomo el valor central del vector
-        pivot = arr[aux].score;
+        pivot = arr[aux].transform.localScale.y;
 
         // en este ciclo debo dejar todos los valores menores al pivot
         // a la izquierda y los mayores a la derecha
         while (true)
         {
-            while (arr[left].score < pivot)
+            while (arr[left].transform.localScale.y < pivot)
             {
                 left++;
             }
-            while (arr[right].score > pivot)
+            while (arr[right].transform.localScale.y > pivot)
             {
                 right--;
             }
             if (left < right)
             {
-                Player temp = arr[right];
+                GameObject temp = arr[right];
                 arr[right] = arr[left];
                 arr[left] = temp;
             }
