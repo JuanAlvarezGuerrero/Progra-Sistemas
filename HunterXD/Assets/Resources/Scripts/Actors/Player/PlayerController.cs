@@ -63,7 +63,11 @@ public class PlayerController : Actor, IPlayer
 
             if (Input.GetKeyDown(KeyCode.P))
             {
+                GameObject item = pila.Tope();
+                item.gameObject.SetActive(true);
+                item.transform.position = transform.position;
                 pila.Desapilar();
+                
             }
             if (Input.GetKeyDown(KeyCode.Y))
             {
@@ -78,7 +82,6 @@ public class PlayerController : Actor, IPlayer
         {
             _anim.SetTrigger("isDead");
         }
-        
     }
 
     private void FixedUpdate()
@@ -154,6 +157,13 @@ public class PlayerController : Actor, IPlayer
         {
             Debug.Log("Objeto Puzzle");
             pila.Apilar(collision.gameObject);
+            
+            collision.gameObject.SetActive(false);
+        }
+        else if(collision.CompareTag("Potion"))
+        {
+            if(_currentLife<5)
+                _currentLife++;
         }
     }
 }
