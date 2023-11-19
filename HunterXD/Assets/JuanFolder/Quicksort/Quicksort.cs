@@ -76,11 +76,28 @@ public class Quicksort : MonoBehaviour
                 GameObject temp = arr[right];
                 arr[right] = arr[left];
                 arr[left] = temp;
+
+                /*arr[right].transform.localPosition = new Vector3(arr[left].transform.localPosition.x,
+                                                                 arr[right].transform.localPosition.y,
+                                                                 arr[right].transform.localPosition.z);*/
+                Vector3 tempPosition = arr[right].transform.localPosition;
+
+                arr[right].transform.localPosition = new Vector3(arr[left].transform.localPosition.x, 
+                                                                 tempPosition.y, 
+                                                                 tempPosition.z);
+                arr[left].transform.localPosition = new Vector3(tempPosition.x,
+                                                                 arr[left].transform.localPosition.y,
+                                                                 arr[left].transform.localPosition.z);
+
             }
             else
             {
                 // este es el valor que devuelvo como proxima posicion de
                 // la particion en el siguiente paso del algoritmo
+                /*arr[left].transform.localPosition = new Vector3(arr[right].transform.localPosition.x,
+                                                                 arr[left].transform.localPosition.y,
+                                                                 arr[left].transform.localPosition.z);*/
+                
                 return right;
             }
         }
