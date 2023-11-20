@@ -11,6 +11,11 @@ public class Menu : MonoBehaviour
     public bool Pause = true;
     #endregion
 
+    #region PRIVATE_PARAMETERS
+    [SerializeField] private PlayerController player;
+    [SerializeField] private LumberjacController lumberjac;
+    #endregion
+
     #region UNITY_EVENTS
     void Update()
     {
@@ -29,6 +34,14 @@ public class Menu : MonoBehaviour
             {
                 Restart();
             }
+        }
+        if (player.CurrentLife <= 0)
+        {
+            SceneManager.LoadScene(5);
+        }
+        if (lumberjac.CurrentLife <= 0)
+        {
+            SceneManager.LoadScene(4);
         }
     }
     void Start()

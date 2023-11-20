@@ -155,5 +155,9 @@ public class PlayerController : Actor, IPlayer
             Debug.Log("Objeto Puzzle");
             pila.Apilar(collision.gameObject);
         }
+        if (collision.CompareTag("Enemy"))
+        {
+            TakeDamage(50);
+        }
     }
 }
