@@ -28,6 +28,7 @@ public class Weapon : MonoBehaviour, IWeapon
 
     public virtual void Shoot()
     {
+        Debug.Log("Shoot");
         IProduct arrow = _arrowFactory.CreateProduct();
         GameObject arrowObject = arrow.MyGameObject;
         arrowObject.transform.position = transform.position;

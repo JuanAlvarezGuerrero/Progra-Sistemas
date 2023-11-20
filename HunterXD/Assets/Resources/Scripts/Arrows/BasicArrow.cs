@@ -9,6 +9,7 @@ public class BasicArrow : MonoBehaviour, IArrow
 
     [SerializeField] private ArrowStats _arrowStats;
     
+
     #endregion
     public float Speed => _arrowStats.Speed;
     public float LifeTime => _arrowStats.LifeTime;
@@ -30,6 +31,7 @@ public class BasicArrow : MonoBehaviour, IArrow
         _lifeTime = LifeTime;
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
+        //Init();
     }
 
     private void Update()
