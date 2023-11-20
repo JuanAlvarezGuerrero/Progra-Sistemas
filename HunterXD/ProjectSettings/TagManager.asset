@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ObjetoPuzzle
+  - Potion
   - Enemy
   layers:
   - Default
@@ -14,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - Enemy
+  - 
   - 
   - 
   - 
