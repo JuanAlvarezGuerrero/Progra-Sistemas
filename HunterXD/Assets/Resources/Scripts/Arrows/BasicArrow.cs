@@ -65,6 +65,17 @@ public class BasicArrow : MonoBehaviour, IArrow
     {
         throw new System.NotImplementedException();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (((1 << collision.gameObject.layer) & HitteableLayer) != 0)
+        {
+            if (collision.GetComponent<Actor>() != null)
+            {
+                GameManager.instance.AddEvents(new CmdTakeDamage(collision.GetComponent<Actor>(), _owner.Damage));
+                Destroy(gameObject);
+            }
+        }
+    }
 
     /*public void OnTriggerEnter(Collider other)
     {
