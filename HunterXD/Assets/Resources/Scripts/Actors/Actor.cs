@@ -10,6 +10,8 @@ public class Actor : MonoBehaviour, IDamagable
 
     [SerializeField] protected ActorStats _stats;
     [SerializeField] protected int _currentLife;
+    private static IActorUIManagerProvider uiProvider => UIManager.Instance;
+    [SerializeField] private string actorID;
     #endregion
     
     #region PUBLIC_PROPERTIES
@@ -27,7 +29,8 @@ public class Actor : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         _currentLife -= damage;
-        Debug.Log("OUCH! " + _currentLife);
+        //Debug.Log("OUCH! " + _currentLife);
+        uiProvider.ActorUIManager.UpdateActorHealth(actorID, _currentLife);
         if (_currentLife <= 0)
         {
             Debug.Log("MUERTE");
