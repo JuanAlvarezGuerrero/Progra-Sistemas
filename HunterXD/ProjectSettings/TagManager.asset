@@ -6,7 +6,6 @@ TagManager:
   tags:
   - ObjetoPuzzle
   - Potion
-  - Enemy
   layers:
   - Default
   - TransparentFX
