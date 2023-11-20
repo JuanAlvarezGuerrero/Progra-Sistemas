@@ -2,27 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pila : PilaTDA
+public class Pila : MonoBehaviour, PilaTDA
 {
-    // arreglo en donde se guarda la informacion
-    int[] a;
-    // cantidad de anillos de datos de la pila
-    int cantidad_datos_max;
-
+    int cantidad_datos_max=3;
+    [SerializeField] private int indice;
+    [SerializeField] private GameObject[] objetosPuzzle;
     public void InicializarPila(int cantidad)
     {
         cantidad_datos_max = cantidad;
-        a = new int[cantidad];
-        a[0] = 0;
+        objetosPuzzle = new GameObject[cantidad];
+        indice = 0;
     }
 
-    public int Apilar(int x)
+    public int Apilar(GameObject elemento)
     {
-        if (a[0] <= cantidad_datos_max)
+        if (indice<cantidad_datos_max)
         {
-            a[0]++;
-            a[a[0]] = x;
-            return a[0];
+            for (int i = indice - 1; i >= 0; i--)
+            {
+                objetosPuzzle[i + 1] = objetosPuzzle[i];
+            }
+            objetosPuzzle[0] = elemento;
+            indice++;
+            return indice;
         }
         else
         {
@@ -34,8 +36,14 @@ public class Pila : PilaTDA
     {
         if (!PilaVacia())
         {
-            a[0]--;
-            return a[0];
+            //objetosPuzzle[0] = null;
+            for (int i = 0; i < indice - 1; i++)
+            {
+                objetosPuzzle[i] = objetosPuzzle[i + 1];
+            }
+            objetosPuzzle[indice-1] = null;
+            indice--;
+            return indice;
         }
         else
         {
@@ -46,19 +54,19 @@ public class Pila : PilaTDA
 
     public bool PilaVacia()
     {
-        return (a[0] == 0);
+        return (indice==0);
     }
 
-    public int Tope()
+    public GameObject Tope()
     {
-        return a[a[0]];
+        return objetosPuzzle[0];
     }
 }
 public interface PilaTDA
 {
     void InicializarPila(int cantidad); //siempre que la pila este inicializada
-    int Apilar(int x); //siempre que la pila este inicializada y no este vacia
+    int Apilar(GameObject elemento); //siempre que la pila este inicializada y no este vacia
     int Desapilar(); //siempre que la pila este inicializada
     bool PilaVacia(); //siempre que la pila este inicializada y no este vacia
-    int Tope();
+    GameObject Tope();
 }
