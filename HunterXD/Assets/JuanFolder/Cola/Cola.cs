@@ -2,29 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cola : ColaTDA
+public class Cola : MonoBehaviour, ColaTDA
 {
-    int[] a; // arreglo en donde se guarda la informacion
-    int indice; // variable entera en donde se guarda la cantidad de elementos que se tienen guardados
+    [SerializeField] private int CantidadCola;
+    [SerializeField] private int indice;
+    [SerializeField] public GameObject[] objetosCola;
+    //int[] a; // arreglo en donde se guarda la informacion
+    //int indice; // variable entera en donde se guarda la cantidad de elementos que se tienen guardados
 
-    public void InicializarCola()
+    public void InicializarCola(int cantidad)
     {
-        a = new int[100];
+        objetosCola = new GameObject[cantidad];
         indice = 0;
     }
-    public void Acolar(int x)
+    public void Acolar(GameObject x)
     {
-        for (int i = indice - 1; i >= 0; i--)
+        if (indice < CantidadCola)
         {
-            a[i + 1] = a[i];
+            for (int i = indice - 1; i >= 0; i--)
+            {
+                objetosCola[i + 1] = objetosCola[i];
+            }
+            objetosCola[0] = x;
+            indice++;
         }
-        a[0] = x;
-
-        indice++;
     }
-    public void Desacolar()
+    public int Desacolar()
     {
-        indice--;
+        if (!ColaVacia())
+        {
+            objetosCola[indice-1] = null;
+            indice--;
+            return indice;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     public bool ColaVacia()
@@ -32,17 +46,17 @@ public class Cola : ColaTDA
         return (indice == 0);
     }
 
-    public int Primero()
+    public GameObject Primero()
     {
-        return a[indice - 1];
+        return objetosCola[indice - 1];
     }
 
 }
 public interface ColaTDA
 {
-    void InicializarCola(); //siempre que la cola este inicializada
-    void Acolar(int x); //siempre que la cola este inicializada y no este vacia
-    void Desacolar(); //siempre que la cola este inicializada
+    void InicializarCola(int cantidad); //siempre que la cola este inicializada
+    void Acolar(GameObject x); //siempre que la cola este inicializada y no este vacia
+    int Desacolar(); //siempre que la cola este inicializada
     bool ColaVacia(); //siempre que la cola este inicializada y no este vacia
-    int Primero();
+    GameObject Primero();
 }
