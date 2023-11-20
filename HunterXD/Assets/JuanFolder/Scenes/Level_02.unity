@@ -315,7 +315,6 @@ GameObject:
   - component: {fileID: 408001781}
   - component: {fileID: 408001785}
   - component: {fileID: 408001784}
-  - component: {fileID: 408001786}
   m_Layer: 0
   m_Name: ChestGolden
   m_TagString: Untagged
@@ -424,6 +423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de04e50d565dec4bb24625f860f13b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Items:
+  - {fileID: 1442832060975733935, guid: a1ed403f2f6af574981e5761bbbbc39a, type: 3}
   SpawnPosition: {fileID: 1259972041}
   _chestClosed: 0
   _canOpen: 0
@@ -453,21 +454,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1}
   m_EdgeRadius: 0
---- !u!114 &408001786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408001780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47341a3752457c1499902eefdd546038, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Items:
-  - {fileID: 6360121621696718774, guid: a1ed403f2f6af574981e5761bbbbc39a, type: 3}
-  - {fileID: 835310876846266759, guid: 7bf955097da69ff4ab814cbb538fa023, type: 3}
 --- !u!1 &486764162
 GameObject:
   m_ObjectHideFlags: 0
