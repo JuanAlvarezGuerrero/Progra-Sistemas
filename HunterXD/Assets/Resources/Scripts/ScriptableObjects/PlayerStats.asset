@@ -20,4 +20,4 @@ MonoBehaviour:
     JumpingPower: 8
     GroundLayer:
       serializedVersion: 2
-      m_Bits: 64
+      m_Bits: 192

@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class PlayerController : Actor, IPlayer
 {
+    [SerializeField] private BaseStairsDrop _baseStairsDrop;
+    
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
     private PlayerStats _playerStats;
     [SerializeField] private Pila pila;
-    [SerializeField] private Quicksort quicksort;
+    //[SerializeField] private Quicksort quicksort;
     [SerializeField] private Weapon _weapon;
-    [SerializeField] private GameObject[] objetosPrueba;
+    //[SerializeField] private GameObject[] objetosPrueba;
 
     #region Parameters
     [SerializeField] private bool _isFacingRight = true;
@@ -63,12 +65,8 @@ public class PlayerController : Actor, IPlayer
                 item.gameObject.SetActive(true);
                 item.transform.position = transform.position;
                 pila.Desapilar();
-                
             }
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                quicksort.RunQuicksort(objetosPrueba, 0, objetosPrueba.Length - 1);
-            }
+            
             inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
             _anim.SetBool("isJumping", !inFloor);
             _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
@@ -153,6 +151,13 @@ public class PlayerController : Actor, IPlayer
         {
             Debug.Log("Objeto Puzzle");
             pila.Apilar(collision.gameObject);
+            
+            collision.gameObject.SetActive(false);
+        }
+        else if(collision.CompareTag("ObjetoCola"))
+        {
+            Debug.Log("Objeto Cola");
+            _baseStairsDrop._cola.Acolar(collision.gameObject);
             
             collision.gameObject.SetActive(false);
         }
