@@ -165,5 +165,9 @@ public class PlayerController : Actor, IPlayer
             if(_currentLife<5)
                 _currentLife++;
         }
+        if (collision.CompareTag("Enemy"))
+        {
+            TakeDamage(50);
+        }
     }
 }

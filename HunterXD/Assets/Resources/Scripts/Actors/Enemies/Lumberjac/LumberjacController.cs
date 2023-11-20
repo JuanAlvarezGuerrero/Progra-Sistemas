@@ -32,7 +32,7 @@ public class LumberjacController : Actor, IActor
         
         if (_lumberjacStates == LumberjacStates.patrol)
         {
-            _anim.SetBool("isPatrol", true);
+            //_anim.SetBool("isPatrol", true);
             RaycastHit2D floorData = Physics2D.Raycast(_groundCheck.position, Vector2.down, distanceCheck);
             _rb2D.velocity = new Vector2(_speed, _rb2D.velocity.y);
             if (floorData == false)
