@@ -17,7 +17,7 @@ public class BasicArrow : MonoBehaviour, IArrow
 
     // [SerializeField] private float _speed = 10f;
     [SerializeField] private float _lifeTime;
-    // [SerializeField] private LayerMask _hitteableLayer;
+    //[SerializeField] private LayerMask _hitteableLayer;
     [SerializeField] private IWeapon _owner;
 
     private Collider _collider;

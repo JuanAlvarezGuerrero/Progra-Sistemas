@@ -5,18 +5,20 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class BatController : MonoBehaviour
+public class BatController : Actor
 {
+    public GameObject rosa;
     private int index = 0;
     [SerializeField] private List<int> result;
-    [SerializeField] private float _batSpeed =2f;
+    [SerializeField] private float _batSpeed;
     private GrafoMA _grafoTda;
     public bool _finishTravel;
     public int _nodeOrigin;
     public Transform[] NodesPosition;
     private void Start()
     {
-        
+        _currentLife = _stats.MaxLife;
+        _batSpeed= _stats.MovementSpeed;
         //NodesPosition = new Transform[9];
         _nodeOrigin = 1;
         _grafoTda = new GrafoMA();
@@ -70,6 +72,12 @@ public class BatController : MonoBehaviour
                     index = 0;
                     _finishTravel = true;
                 }
+            }
+            if (_currentLife <= 0)
+            {
+                gameObject.SetActive(false);
+                rosa.SetActive(true);
+                
             }
         }
     }

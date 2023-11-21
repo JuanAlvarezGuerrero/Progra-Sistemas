@@ -36,6 +36,13 @@ public class Actor : MonoBehaviour, IDamagable
             Debug.Log("MUERTE");
         }
     }
-    
+    public void GetLife(int value)
+    {
+        if (_currentLife <5)
+        {
+            _currentLife += value;
+        }
+        uiProvider.ActorUIManager.UpdateActorHealth(actorID, _currentLife);
+    }
     #endregion
 }

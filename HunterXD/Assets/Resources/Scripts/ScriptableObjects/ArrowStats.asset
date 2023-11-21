@@ -17,4 +17,4 @@ MonoBehaviour:
     LifeTime: 2
     HitteableLayer:
       serializedVersion: 2
-      m_Bits: 128
+      m_Bits: 256

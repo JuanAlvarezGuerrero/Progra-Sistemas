@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LumberjacStats
   m_EditorClassIdentifier: 
   _stats:
-    MaxLife: 80
+    MaxLife: 5
     MovementSpeed: 3
