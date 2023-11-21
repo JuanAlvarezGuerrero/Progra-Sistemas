@@ -189,7 +189,6 @@ GameObject:
   - component: {fileID: 7780912164038311950}
   - component: {fileID: 7780912164038311945}
   - component: {fileID: 7780912164038311944}
-  - component: {fileID: 1587487183}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -351,7 +350,7 @@ MonoBehaviour:
   _currentLife: 0
   actorID: 
   _baseStairsDrop: {fileID: 0}
-  pila: {fileID: 1587487183}
+  pila: {fileID: 0}
   _weapon: {fileID: 7780912163657680803}
   _isFacingRight: 1
   _groundCheck: {fileID: 7780912163059965945}
@@ -363,17 +362,3 @@ MonoBehaviour:
   _jump: 32
   _attack: 323
   _changePower: 324
---- !u!114 &1587487183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7780912164038311956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd1cb59db611944f8bb231cbf8f3dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indice: 0
-  objetosPuzzle: []

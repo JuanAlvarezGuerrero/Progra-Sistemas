@@ -29,7 +29,6 @@ public class LumberjacController : Actor, IActor
     private void FixedUpdate()
     {
         
-        
         if (_lumberjacStates == LumberjacStates.patrol)
         {
             //_anim.SetBool("isPatrol", true);
@@ -38,6 +37,10 @@ public class LumberjacController : Actor, IActor
             if (floorData == false)
             {
                 Flip();
+            }
+            if (_currentLife <= 0)
+            {
+                gameObject.SetActive(false);
             }
         }
     }

@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class Chest : MonoBehaviour
 {
+    public GameObject text;
     public List<ItemChest> Items;
     public GameObject SpawnPosition;
     
@@ -46,6 +47,8 @@ public class Chest : MonoBehaviour
             _chestClosed = false;
             _canOpen = false;
             SpawnItem();
+            text.gameObject.SetActive(false);
+
 
             //itemObject.GetComponent<ItemChest>().SetOwner(this);
         }
@@ -57,6 +60,7 @@ public class Chest : MonoBehaviour
     {
         if (other.CompareTag("Player") && _chestClosed)
         {
+            text.gameObject.SetActive(true);
             _canOpen = true;
         }
     }
@@ -65,6 +69,7 @@ public class Chest : MonoBehaviour
     {
         if (other.CompareTag("Player") && _chestClosed)
         {
+            text.gameObject.SetActive(false);
             _canOpen = false;
         }
     }

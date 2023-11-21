@@ -63,7 +63,7 @@ public class PlayerController : Actor, IPlayer
             {
                 GameObject item = pila.Tope();
                 item.gameObject.SetActive(true);
-                item.transform.position = transform.position;
+                item.transform.position = new Vector2(transform.position.x+3,transform.position.y+1);
                 pila.Desapilar();
             }
             
@@ -163,12 +163,11 @@ public class PlayerController : Actor, IPlayer
         }
         else if(collision.CompareTag("Potion"))
         {
-            if(_currentLife<5)
-                _currentLife++;
+            GetLife(1);
         }
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy")||collision.CompareTag("Trap"))
         {
-            TakeDamage(50);
+            TakeDamage(1);
         }
     }
 }

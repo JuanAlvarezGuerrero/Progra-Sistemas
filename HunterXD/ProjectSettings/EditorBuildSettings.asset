@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LoseScreen.unity
     guid: b4dc45acec4ff7f4690706c17026f6cb
   - enabled: 1
+    path: Assets/JorgeFolder/Level_01.unity
+    guid: 1457d1c12dd9eeb43b0fefecb05b6e5b
+  - enabled: 1
     path: Assets/MaruFolder/MLevel_01 1.unity
     guid: 30e46cb68e7ebaf4db290e1869a39b71
   - enabled: 1
