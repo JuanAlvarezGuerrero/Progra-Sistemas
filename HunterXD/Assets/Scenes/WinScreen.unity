@@ -2424,7 +2424,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.405
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2698,7 +2698,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e7ef5b2b25187b245b88cd7ff8e6d4b5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb8fd2984c69545498f63a16d055571d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -3736,7 +3736,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level_01
+          m_StringArgument: Nivel-Tutorial
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1822031703}

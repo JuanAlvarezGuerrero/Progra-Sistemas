@@ -72,6 +72,7 @@ public class BasicArrow : MonoBehaviour, IArrow
                 GameManager.instance.AddEvents(new CmdTakeDamage(collision.GetComponent<Actor>(), _owner.Damage));
                 Destroy(gameObject);
             }
+            Destroy(gameObject);
         }
     }
 

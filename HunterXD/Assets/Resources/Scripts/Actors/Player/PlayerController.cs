@@ -3,17 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : Actor, IPlayer
 {
+    
     [SerializeField] private BaseStairsDrop _baseStairsDrop;
     
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
     private PlayerStats _playerStats;
     [SerializeField] private Pila pila;
-    //[SerializeField] private Quicksort quicksort;
     [SerializeField] private Weapon _weapon;
-    //[SerializeField] private GameObject[] objetosPrueba;
+    
 
     #region Parameters
     [SerializeField] private bool _isFacingRight = true;
@@ -70,11 +71,17 @@ public class PlayerController : Actor, IPlayer
             inFloor=Physics2D.OverlapBox( _groundCheck.position, _dimensionBox, 0, _playerStats.GroundLayer);
             _anim.SetBool("isJumping", !inFloor);
             _anim.SetFloat("speed", Math.Abs(_rb.velocity.x));
+
+            if (_currentLife <= 0)
+            {
+                _playerState = PlayerStatesEnum.Dead;
+            }
         }
 
         if(_playerState == PlayerStatesEnum.Dead)
         {
             _anim.SetTrigger("isDead");
+            SceneManager.LoadScene(5);
         }
     }
 
@@ -90,6 +97,12 @@ public class PlayerController : Actor, IPlayer
             }
             jumping = false;
         }
+
+        if (_playerState == PlayerStatesEnum.Dead)
+        {
+            
+        }
+        
     }
 
     #region Public_Methods
