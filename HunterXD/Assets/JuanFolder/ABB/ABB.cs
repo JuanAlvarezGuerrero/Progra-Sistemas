@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ABB : ABBTDA
 {
@@ -152,9 +153,9 @@ public class ABB : ABBTDA
         }
         else
         {
-            /*return (1 + Math.Max(altura(ab.hijoIzq), altura(ab.hijoDer))); Math.Max no está en Unity, pero hay Mathf.Max*/
+            return (1 + Math.Max(altura(ab.hijoIzq), altura(ab.hijoDer)));
             /*return (1 + Mathf.Max(altura(ab.hijoIzq), altura(ab.hijoDer)));*/
-            return 0; /*esto es provisorio, borrar cuando se haya encontrado la solución de la linea de arriba.*/
+            /*return 0; esto es provisorio, borrar cuando se haya encontrado la solución de la linea de arriba.*/
         }
     }
 

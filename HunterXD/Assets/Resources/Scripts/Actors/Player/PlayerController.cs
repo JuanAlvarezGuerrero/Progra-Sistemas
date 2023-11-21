@@ -63,7 +63,7 @@ public class PlayerController : Actor, IPlayer
             {
                 GameObject item = pila.Tope();
                 item.gameObject.SetActive(true);
-                item.transform.position = transform.position;
+                item.transform.position = new Vector2(transform.position.x+5,transform.position.y+1);
                 pila.Desapilar();
             }
             
