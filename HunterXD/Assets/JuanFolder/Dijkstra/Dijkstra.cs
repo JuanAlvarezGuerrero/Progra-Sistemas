@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Dijkstra : MonoBehaviour
 {
     public static int[] distance;
@@ -75,14 +75,14 @@ public class Dijkstra : MonoBehaviour
             for (int v = 0; v < verticesCount; ++v)
             {
                 // comparo cada nodo (que aun no se haya calculado) contra el que se encontro que tiene la menor distancia al origen elegido
-                /*if (!shortestPathTreeSet[v] && Convert.ToBool(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
+                if (!shortestPathTreeSet[v] && Convert.ToBoolean(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
                 {
-                    // si encontré una distancia menor a la que tenia, la reasigno la nodo
+                    // si encontrï¿½ una distancia menor a la que tenia, la reasigno la nodo
                     distance[v] = distance[u] + graph[u, v];
                     // guardo los nodos para reconstruir el camino
                     nodos1[v] = grafo.Etiqs[u];
                     nodos2[v] = grafo.Etiqs[v];
-                }*/
+                }
             }
         }
 
