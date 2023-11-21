@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrafoMA : MonoBehaviour, GrafoTDA
+public class GrafoMA : GrafoTDA
 {
     static int n = 100;
     public int[,] MAdy;

@@ -1,13 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Dijkstra
+
+public class Dijkstra : MonoBehaviour
 {
     public static int[] distance;
-    //public static string[] nodos;
-    public static Transform[] nodos;
-    
+    public static string[] nodos;
+
     private static int MinimumDistance(int[] distance, bool[] shortestPathTreeSet, int verticesCount)
     {
         int min = int.MaxValue;
@@ -28,71 +27,6 @@ public class Dijkstra
         return minIndex;
     }
 
-    public static List<int> RunDijkstra2(GrafoMA grafo, int source)
-    {
-        int[,] graph = grafo.MAdy;
-        int verticesCount = grafo.cantNodos;
-        source = grafo.Vert2Indice(source);
-        distance = new int[verticesCount];
-        bool[] shortestPathTreeSet = new bool[verticesCount];
-
-        int[] nodos1 = new int[verticesCount];
-        int[] nodos2 = new int[verticesCount];
-        for (int i = 0; i < verticesCount; ++i)
-        {
-            distance[i] = int.MaxValue;
-            
-            shortestPathTreeSet[i] = false;
-
-            nodos1[i] = nodos2[i] = -1;
-        }
-        distance[source] = 0;
-        nodos1[source] = nodos2[source] = grafo.Etiqs[source];
-        
-        for (int count = 0; count < verticesCount - 1; ++count)
-        {
-            int u = MinimumDistance(distance, shortestPathTreeSet, verticesCount);
-            shortestPathTreeSet[u] = true;
-
-            // recorro todos los nodos (vertices)
-            for (int v = 0; v < verticesCount; ++v)
-            {
-                // comparo cada nodo (que aun no se haya calculado) contra el que se encontro que tiene la menor distancia al origen elegido
-                if (!shortestPathTreeSet[v] && Convert.ToBoolean(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
-                {
-                    // si encontrï¿½ una distancia menor a la que tenia, la reasigno la nodo
-                    distance[v] = distance[u] + graph[u, v];
-                    // guardo los nodos para reconstruir el camino
-                    nodos1[v] = grafo.Etiqs[u];
-                    nodos2[v] = grafo.Etiqs[v];
-                }
-            }
-        }
-        int nodOrig = grafo.Etiqs[source];
-        List<int> l1 = new List<int>();
-        for (int i = 0; i < verticesCount; i++)
-        {
-            if (nodos1[i] != -1)
-            {
-                //List<int> l1 = new List<int>();
-                l1.Add(nodos1[i]);
-                l1.Add(nodos2[i]);
-                while (l1[0] != nodOrig)
-                {
-                    for (int j = 0; j < verticesCount; j++)
-                    {
-                        if (j != source && l1[0] == nodos2[j])
-                        {
-                            l1.Insert(0, nodos1[j]);
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-        
-        return l1;
-    }
     public static void RunDijkstra(GrafoMA grafo, int source)
     {
         // obtengo la matriz de adyacencia del TDA_Grafo
@@ -141,50 +75,50 @@ public class Dijkstra
             for (int v = 0; v < verticesCount; ++v)
             {
                 // comparo cada nodo (que aun no se haya calculado) contra el que se encontro que tiene la menor distancia al origen elegido
-                if (!shortestPathTreeSet[v] && Convert.ToBoolean(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
+                /*if (!shortestPathTreeSet[v] && Convert.ToBool(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
                 {
-                    // si encontrï¿½ una distancia menor a la que tenia, la reasigno la nodo
+                    // si encontré una distancia menor a la que tenia, la reasigno la nodo
                     distance[v] = distance[u] + graph[u, v];
                     // guardo los nodos para reconstruir el camino
                     nodos1[v] = grafo.Etiqs[u];
                     nodos2[v] = grafo.Etiqs[v];
-                }
+                }*/
             }
         }
 
-        //construyo camino de nodos
+        // construyo camino de nodos
         //nodos = new string[verticesCount];
-        // int nodOrig = grafo.Etiqs[source];
-        // for (int i = 0; i < verticesCount; i++)
-        // {
-        //     if (nodos1[i] != -1)
-        //     {
-        //         List<int> l1 = new List<int>();
-        //         l1.Add(nodos1[i]);
-        //         l1.Add(nodos2[i]);
-        //         while (l1[0] != nodOrig)
-        //         {
-        //             for (int j = 0; j < verticesCount; j++)
-        //             {
-        //                 if (j != source && l1[0] == nodos2[j])
-        //                 {
-        //                     l1.Insert(0, nodos1[j]);
-        //                     break;
-        //                 }
-        //             }
-        //         }
-        //         for (int j = 0; j < l1.Count; j++)
-        //         {
-        //             if (j == 0)
-        //             {
-        //                 nodos[i] = l1[j].ToString();
-        //             }
-        //             else
-        //             {
-        //                 nodos[i] += "," + l1[j].ToString();
-        //             }
-        //         }
-        //     }
-        // }
+        //int nodOrig = grafo.Etiqs[source];
+        //for (int i = 0; i < verticesCount; i++)
+        //{
+        //    if (nodos1[i] != -1)
+        //    {
+        //        List<int> l1 = new List<int>();
+        //        l1.Add(nodos1[i]);
+        //        l1.Add(nodos2[i]);
+        //        while (l1[0] != nodOrig)
+        //        {
+        //            for (int j = 0; j < verticesCount; j++)
+        //            {
+        //                if (j != source && l1[0] == nodos2[j])
+        //                {
+        //                    l1.Insert(0, nodos1[j]);
+        //                    break;
+        //                }
+        //            }
+        //        }
+        //        for (int j = 0; j < l1.Count; j++)
+        //        {
+        //            if (j == 0)
+        //            {
+        //                nodos[i] = l1[j].ToString();
+        //            }
+        //            else
+        //            {
+        //                nodos[i] += "," + l1[j].ToString();
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
