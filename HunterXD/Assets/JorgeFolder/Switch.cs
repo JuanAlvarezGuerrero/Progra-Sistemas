@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    //[SerializeField] private Cola _cola;
-    
+    public GameObject text;
     [SerializeField] private Quicksort quicksort;
     [SerializeField] public GameObject[] objetosQuickSort;
 
@@ -35,6 +34,13 @@ public class Switch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        text.gameObject.SetActive(true);
         isActive = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        text.gameObject.SetActive(false);
+        isActive = false;
     }
 }

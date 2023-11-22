@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BaseStairsDrop : MonoBehaviour
 {
+    public GameObject text;
     [SerializeField] private Switch _switch;
     public int index;
     public List<Transform> _stairPosition;
@@ -44,6 +45,7 @@ public class BaseStairsDrop : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            text.gameObject.SetActive(true);
             isPlayerOn = true;
         }
     }
@@ -52,6 +54,7 @@ public class BaseStairsDrop : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            text.gameObject.SetActive(false);
             isPlayerOn = false;
         }    
     }
