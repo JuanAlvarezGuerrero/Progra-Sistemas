@@ -5,7 +5,6 @@ using UnityEngine;
 public class Dijkstra
 {
     public static int[] distance;
-    //public static string[] nodos;
     public static Transform[] nodos;
     
     private static int MinimumDistance(int[] distance, bool[] shortestPathTreeSet, int verticesCount)
@@ -54,15 +53,15 @@ public class Dijkstra
             int u = MinimumDistance(distance, shortestPathTreeSet, verticesCount);
             shortestPathTreeSet[u] = true;
 
-            // recorro todos los nodos (vertices)
+            
             for (int v = 0; v < verticesCount; ++v)
             {
-                // comparo cada nodo (que aun no se haya calculado) contra el que se encontro que tiene la menor distancia al origen elegido
+                
                 if (!shortestPathTreeSet[v] && Convert.ToBoolean(graph[u, v]) && distance[u] != int.MaxValue && distance[u] + graph[u, v] < distance[v])
                 {
-                    // si encontr� una distancia menor a la que tenia, la reasigno la nodo
+                    
                     distance[v] = distance[u] + graph[u, v];
-                    // guardo los nodos para reconstruir el camino
+                    
                     nodos1[v] = grafo.Etiqs[u];
                     nodos2[v] = grafo.Etiqs[v];
                 }
@@ -74,7 +73,6 @@ public class Dijkstra
         {
             if (nodos1[i] != -1)
             {
-                //List<int> l1 = new List<int>();
                 l1.Add(nodos1[i]);
                 l1.Add(nodos2[i]);
                 while (l1[0] != nodOrig)
