@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -88,7 +88,4 @@ public class BatController : Actor
             transform.position += destiny *_batSpeed*Time.deltaTime;
         }
     }
-
-
-
 }
