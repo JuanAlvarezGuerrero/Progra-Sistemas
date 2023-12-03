@@ -10,5 +10,4 @@ public interface IArrow:IProduct
     void Init();
     void Travel();
     void SetOwner(IWeapon weapon);
-    void Damage(IActor actor, int dmg);
 }

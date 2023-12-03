@@ -6,7 +6,6 @@ using UnityEngine;
 public class LumberjacController : Actor, IActor
 {
     #region Parameters_Private
-    //[SerializeField] private LumberjacStats _lumberjacStats;
     [SerializeField] private LumberjacStates _lumberjacStates = LumberjacStates.patrol;
 
 
@@ -21,7 +20,6 @@ public class LumberjacController : Actor, IActor
     #endregion
     private void Awake()
     {
-        //_lumberjacStats = _stats as LumberjacStats;
         _rb2D = GetComponent<Rigidbody2D>();
         _speed = _stats.MovementSpeed;
     }
@@ -31,7 +29,6 @@ public class LumberjacController : Actor, IActor
         
         if (_lumberjacStates == LumberjacStates.patrol)
         {
-            //_anim.SetBool("isPatrol", true);
             RaycastHit2D floorData = Physics2D.Raycast(_groundCheck.position, Vector2.down, distanceCheck);
             _rb2D.velocity = new Vector2(_speed, _rb2D.velocity.y);
             if (floorData == false)

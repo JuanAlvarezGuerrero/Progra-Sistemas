@@ -1,13 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class BatController : Actor
 {
-    public GameObject rosa;
+    public GameObject RoseChangeLevel;
     private int index = 0;
     [SerializeField] private List<int> result;
     [SerializeField] private float _batSpeed;
@@ -19,7 +19,6 @@ public class BatController : Actor
     {
         _currentLife = _stats.MaxLife;
         _batSpeed= _stats.MovementSpeed;
-        //NodesPosition = new Transform[9];
         _nodeOrigin = 1;
         _grafoTda = new GrafoMA();
         _grafoTda.InicializarGrafo();
@@ -75,12 +74,10 @@ public class BatController : Actor
             if (_currentLife <= 0)
             {
                 gameObject.SetActive(false);
-                rosa.SetActive(true);
-                
+                RoseChangeLevel.SetActive(true);
             }
         }
     }
-
     void BatMove(Vector3 destiny)
     {
         if (!_finishTravel)

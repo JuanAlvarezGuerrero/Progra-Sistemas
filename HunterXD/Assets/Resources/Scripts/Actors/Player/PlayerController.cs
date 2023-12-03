@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : Actor, IPlayer
 {
     
+    [SerializeField] private BaseStairsDropABB _baseStairsDropABB;
     [SerializeField] private BaseStairsDrop _baseStairsDrop;
     
     private PlayerStatesEnum _playerState = PlayerStatesEnum.Alive;
@@ -29,17 +30,14 @@ public class PlayerController : Actor, IPlayer
 
     #region Controls
     [Header("Controls")]
-    [SerializeField] private KeyCode _moveLeft = KeyCode.A;
-    [SerializeField] private KeyCode _moveRight = KeyCode.D;
     [SerializeField] private KeyCode _jump = KeyCode.Space;
     [SerializeField] private KeyCode _attack = KeyCode.Mouse0;
-    [SerializeField] private KeyCode _changePower = KeyCode.Mouse1;
     #endregion
 
     private void Awake()
     {
         _playerStats = _stats as PlayerStats;
-        pila.InicializarPila(3);
+        pila.InicializarPila(4);
     }
 
     private void Update()
@@ -49,11 +47,6 @@ public class PlayerController : Actor, IPlayer
             IsAlive(_currentLife);
             Attack();
             Flip();
-
-            if (Input.GetKeyDown(_attack))
-            {
-                //TakeDamage(5);
-            }
 
             if (Input.GetKeyDown(_jump))
             {
@@ -97,22 +90,15 @@ public class PlayerController : Actor, IPlayer
             }
             jumping = false;
         }
-
-        if (_playerState == PlayerStatesEnum.Dead)
-        {
-            
-        }
-        
     }
 
     #region Public_Methods
-    public void Move(Vector2 dir) // Hacer con "DO"
+    public void Move(Vector2 dir)
     {
         _rb.velocity = new Vector2(dir.x * _playerStats.Speed, _rb.velocity.y);
-        
     }
 
-    public void Attack() // Hacer con "DO"
+    public void Attack()
     {
         if (Input.GetKeyDown(_attack))
         {
@@ -121,13 +107,13 @@ public class PlayerController : Actor, IPlayer
         }
     }
 
-    public void Jump() // Hacer con "DO"
+    public void Jump()
     {
         _rb.AddForce(Vector2.up * _playerStats.JumpingPower, ForceMode2D.Impulse);
         inFloor = false;
     }
 
-    public void SwitchPower() // Hacer con "DO"
+    public void SwitchPower()
     {
         throw new System.NotImplementedException();
     }
@@ -163,7 +149,7 @@ public class PlayerController : Actor, IPlayer
         if (collision.CompareTag("ObjetoPuzzle"))
         {
             Debug.Log("Objeto Puzzle");
-            pila.Apilar(collision.gameObject);
+            _baseStairsDropABB.Pila.Apilar(collision.gameObject);
             
             collision.gameObject.SetActive(false);
         }

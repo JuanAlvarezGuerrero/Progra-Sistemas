@@ -4,36 +4,39 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BaseStairsDrop : MonoBehaviour
+public class BaseStairsDropABB : MonoBehaviour
 {
     public GameObject text;
-    [SerializeField] private Switch _switch;
+    [SerializeField] private SwitchABB _switch;
     public int index;
     public List<Transform> _stairPosition;
-    public Cola _cola;
+    public Pila Pila;
     private bool isPlayerOn;
 
     private void Start()
     {
         isPlayerOn = false;
         index = 0;
-        _cola.InicializarCola(4);
+        Pila.InicializarPila(4);
     }
 
     private void Update()
     {
         if (isPlayerOn && Input.GetKeyDown(KeyCode.G))
         {
-            if (!_cola.ColaVacia())
+            if (!Pila.PilaVacia())
             {
-                if (index < 4)
+                if (index < 5)
                 {
-                    GameObject item = _cola.Primero();
+                    GameObject item = Pila.Tope();
                     item.transform.position = _stairPosition[index].position;
                     item.gameObject.SetActive(true);
                     item.GetComponent<BoxCollider2D>().isTrigger = false;
-                    _switch.objetosQuickSort[index] = item;
-                    _cola.Desacolar();
+                    _switch.objectsABB[index] = item;
+                    float value = item.GetComponent<PlatformInfo>().Info;
+                    Debug.Log(value);
+                    _switch._abb.AgregarElem(ref _switch._abb.raiz, value);
+                    Pila.Desapilar();
                 }
                 index++;
             }

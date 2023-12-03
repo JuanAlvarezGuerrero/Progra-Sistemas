@@ -15,9 +15,7 @@ public class BasicArrow : MonoBehaviour, IArrow
     public LayerMask HitteableLayer => _arrowStats.HitteableLayer;
     public IWeapon Owner => _owner;
 
-    // [SerializeField] private float _speed = 10f;
     [SerializeField] private float _lifeTime;
-    //[SerializeField] private LayerMask _hitteableLayer;
     [SerializeField] private IWeapon _owner;
 
     private Collider _collider;
@@ -35,7 +33,6 @@ public class BasicArrow : MonoBehaviour, IArrow
     private void Update()
     {
         Travel();
-
         _lifeTime -= Time.deltaTime;
         if (_lifeTime <= 0) Destroy(this.gameObject);
     }
@@ -58,11 +55,7 @@ public class BasicArrow : MonoBehaviour, IArrow
     {
         return Instantiate(this);
     }
-
-    public void Damage(IActor actor, int dmg)
-    {
-        throw new System.NotImplementedException();
-    }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (((1 << collision.gameObject.layer) & HitteableLayer) != 0)
@@ -75,16 +68,4 @@ public class BasicArrow : MonoBehaviour, IArrow
             Destroy(gameObject);
         }
     }
-
-    /*public void OnTriggerEnter(Collider other)
-    {
-        if (((1 << other.gameObject.layer) & _hitteableLayer) != 0)
-        {
-            if (other.GetComponent<Actor>() != null)
-            {
-                GameManager.instance.AddEvents(new CmdTakeDamage(other.GetComponent<Actor>(), _owner.Damage));
-                Destroy(gameObject);
-            }
-        }
-    }*/
 }

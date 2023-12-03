@@ -22,7 +22,6 @@ public class Chest : MonoBehaviour
         _canOpen = false;
         _chestClosed = true;
         
-        
         ItemChest item = Items[RandomItem()];
         _itemFactory = new ItemFactory(item);
     }
@@ -48,13 +47,8 @@ public class Chest : MonoBehaviour
             _canOpen = false;
             SpawnItem();
             text.gameObject.SetActive(false);
-
-
-            //itemObject.GetComponent<ItemChest>().SetOwner(this);
         }
     }
-    
-    
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -73,5 +67,4 @@ public class Chest : MonoBehaviour
             _canOpen = false;
         }
     }
-    
 }

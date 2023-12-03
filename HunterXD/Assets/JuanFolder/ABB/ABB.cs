@@ -2,54 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ABB : ABBTDA
+public class ABB : MonoBehaviour, ABBTDA
 {
-    /*Implementación en una ConsoleApp*/
-    /*
-     // Arboles Binarios de Búsqueda
-            Console.WriteLine("Programa Iniciado\n");
-
-            int[] vectorEnteros = { 20, 10, 1, 26, 35, 40, 18, 12, 15, 14, 30, 23 };
-
-            // creo un TDA ABB
-            ABB arbol = new ABB();
-            arbol.InicializarArbol();
-
-            // agrego los mismos elementos del vector al arbol
-            for (int i = 0; i < vectorEnteros.Length; i++)
-            {
-                arbol.AgregarElem(ref arbol.raiz, vectorEnteros[i]);
-            }
-
-            // Altura total
-            int aTotal = altura(arbol.raiz);
-            Console.WriteLine("\nAltura total del arbol: " + aTotal.ToString());
-
-            // Pre-Order
-            Console.WriteLine("\nImpresión en Pre-Order");
-            preOrder(arbol.raiz);
-
-            // In-Order
-            Console.WriteLine("\nImpresión en In-Order");
-            inOrder(arbol.raiz);
-
-            // Post-Order
-            Console.WriteLine("\nImpresión en Post-Order");
-            postOrder(arbol.raiz);
-
-            // Level-Order
-            Console.WriteLine("\nImpresión en Level-Order");
-            levelOrder(arbol.raiz);
-
-            // Alturas con Pre-Order
-            Console.WriteLine("\nAlturas recorriendo con Pre-Order");
-            preOrder_FE(arbol.raiz);
-
-            Console.ReadKey();
-     */
+    public List<float> PlatformValues;
     public NodoABB raiz;
 
-    public int Raiz()
+    public float Raiz()
     {
         return raiz.info;
     }
@@ -74,7 +32,7 @@ public class ABB : ABBTDA
         return raiz.hijoIzq;
     }
 
-    public void AgregarElem(ref NodoABB raiz, int x)
+    public void AgregarElem(ref NodoABB raiz, float x)
     {
         if (raiz == null)
         {
@@ -91,7 +49,7 @@ public class ABB : ABBTDA
         }
     }
 
-    public void EliminarElem(ref NodoABB raiz, int x)
+    public void EliminarElem(ref NodoABB raiz, float x)
     {
         if (raiz != null)
         {
@@ -120,7 +78,7 @@ public class ABB : ABBTDA
         }
     }
 
-    public int Mayor(NodoABB a)
+    public float Mayor(NodoABB a)
     {
         if (a.hijoDer == null)
         {
@@ -132,7 +90,7 @@ public class ABB : ABBTDA
         }
     }
 
-    public int Menor(NodoABB a)
+    public float Menor(NodoABB a)
     {
         if (a.hijoIzq == null)
         {
@@ -143,83 +101,40 @@ public class ABB : ABBTDA
             return Menor(a.hijoIzq);
         }
     }
-
-    static int altura(NodoABB ab)
-    {
-        if (ab == null)
-        {
-            return -1;
-        }
-        else
-        {
-            /*return (1 + Math.Max(altura(ab.hijoIzq), altura(ab.hijoDer))); Math.Max no está en Unity, pero hay Mathf.Max*/
-            /*return (1 + Mathf.Max(altura(ab.hijoIzq), altura(ab.hijoDer)));*/
-            return 0; /*esto es provisorio, borrar cuando se haya encontrado la solución de la linea de arriba.*/
-        }
-    }
-
-    static void preOrder_FE(NodoABB a)
-    {
-        if (a != null)
-        {
-            // accion mientras recorro //
-            Debug.Log("Nodo Padre: " + a.info.ToString());
-            Debug.Log("Altura Izquierda: " + altura(a.hijoDer));
-            Debug.Log("Altura Derecha: " + altura(a.hijoIzq));
-            //                         //
-
-            preOrder_FE(a.hijoIzq);
-            preOrder_FE(a.hijoDer);
-        }
-    }
-
-    static void preOrder(NodoABB a)
+    
+    public void preOrder(NodoABB a)
     {
         if (a != null)
         {
             Debug.Log(a.info.ToString());
+            PlatformValues.Add(a.info);
             preOrder(a.hijoIzq);
             preOrder(a.hijoDer);
         }
     }
 
-    static void inOrder(NodoABB a)
+    public void inOrder(NodoABB a)
     {
         if (a != null)
         {
             inOrder(a.hijoIzq);
             Debug.Log(a.info.ToString());
+            PlatformValues.Add(a.info);
             inOrder(a.hijoDer);
         }
     }
 
-    static void postOrder(NodoABB a)
+    public void postOrder(NodoABB a)
     {
         if (a != null)
         {
             postOrder(a.hijoIzq);
             postOrder(a.hijoDer);
             Debug.Log(a.info.ToString());
+            PlatformValues.Add(a.info);
         }
     }
-
-    static void level_Order(NodoABB nodo)
-    {
-        Queue<NodoABB> q = new Queue<NodoABB>();
-
-        q.Enqueue(nodo);
-
-        while (q.Count > 0)
-        {
-            nodo = q.Dequeue();
-
-            Debug.Log(nodo.info.ToString());
-
-            if (nodo.hijoIzq != null) { q.Enqueue(nodo.hijoIzq); }
-
-            if (nodo.hijoDer != null) { q.Enqueue(nodo.hijoDer); }
-        }
-    }
+    
 
     static void levelOrder(NodoABB nodo)
     {
@@ -257,19 +172,18 @@ public class ABB : ABBTDA
 }
 public class NodoABB
 {
-    // datos a almacenar, en este caso un entero
-    public int info;
-    // referencia los nodos izquiero y derecho
+    public float info;
+    
     public NodoABB hijoIzq = null;
     public NodoABB hijoDer = null;
 }
 public interface ABBTDA
 {
-    int Raiz();
+    float Raiz();
     NodoABB HijoIzq();
     NodoABB HijoDer();
     bool ArbolVacio();
     void InicializarArbol();
-    void AgregarElem(ref NodoABB n, int x);
-    void EliminarElem(ref NodoABB n, int x);
+    void AgregarElem(ref NodoABB n, float x);
+    void EliminarElem(ref NodoABB n, float x);
 }

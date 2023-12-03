@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pila : MonoBehaviour, PilaTDA
 {
-    int cantidad_datos_max=3;
+    int cantidad_datos_max=4;
     [SerializeField] private int indice;
     [SerializeField] private GameObject[] objetosPuzzle;
     public void InicializarPila(int cantidad)
