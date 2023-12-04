@@ -893,7 +893,7 @@ MonoBehaviour:
   _stats: {fileID: 11400000, guid: 6c8f71703b376b244a52fe87bdfe5fd6, type: 2}
   _currentLife: 0
   actorID: 
-  rosa: {fileID: 115167002}
+  RoseChangeLevel: {fileID: 115167002}
   result: 
   _batSpeed: 5
   _finishTravel: 0

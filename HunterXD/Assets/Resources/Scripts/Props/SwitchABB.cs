@@ -28,12 +28,12 @@ public class SwitchABB : MonoBehaviour
         {
             _imgSwitch[1].gameObject.SetActive(true);
             _imgSwitch[0].gameObject.SetActive(false);
-            //_abb.preOrder(_abb.raiz);
+            _abb.preOrder(_abb.raiz);
             //_abb.inOrder(_abb.raiz);
-            _abb.postOrder(_abb.raiz);
+            //_abb.postOrder(_abb.raiz);
             for (int i = 0; i < objectsABB.Length; i++)
             {
-                objectsABB[i].transform.localScale = new Vector3(objectsABB[i].transform.localScale.x,_abb.PlatformValues[i], objectsABB[i].transform.localScale.z);
+                objectsABB[i].transform.localScale = new Vector3(_abb.PlatformValues[i], objectsABB[i].transform.localScale.y, objectsABB[i].transform.localScale.z);
             }
             isActive = false;
         }
