@@ -1,11 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ABB : MonoBehaviour, ABBTDA
 {
-    public List<float> PlatformValues;
+    public GameObject[] objectsABB = new GameObject[4];
+    public List<float> PlatformValues = new List<float>();
     public NodoABB raiz;
+
+    private void Start()
+    {
+        objectsABB = new GameObject[4];
+        PlatformValues = new List<float>();
+    }
 
     public float Raiz()
     {

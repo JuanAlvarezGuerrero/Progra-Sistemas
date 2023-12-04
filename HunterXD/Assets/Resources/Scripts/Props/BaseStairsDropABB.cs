@@ -7,7 +7,8 @@ using UnityEngine;
 public class BaseStairsDropABB : MonoBehaviour
 {
     public GameObject text;
-    [SerializeField] private SwitchABB _switch;
+    //[SerializeField] private SwitchABB _switch;
+    [SerializeField] private ABB _abbManager;
     public int index;
     public List<Transform> _stairPosition;
     public Pila Pila;
@@ -32,10 +33,10 @@ public class BaseStairsDropABB : MonoBehaviour
                     item.transform.position = _stairPosition[index].position;
                     item.gameObject.SetActive(true);
                     item.GetComponent<BoxCollider2D>().isTrigger = false;
-                    _switch.objectsABB[index] = item;
+                    _abbManager.objectsABB[index] = item;
                     float value = item.GetComponent<PlatformInfo>().Info;
                     Debug.Log(value);
-                    _switch._abb.AgregarElem(ref _switch._abb.raiz, value);
+                    _abbManager.AgregarElem(ref _abbManager.raiz, value);
                     Pila.Desapilar();
                 }
                 index++;
