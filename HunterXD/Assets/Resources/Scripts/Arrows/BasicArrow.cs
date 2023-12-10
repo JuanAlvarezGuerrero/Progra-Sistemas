@@ -64,6 +64,7 @@ public class BasicArrow : MonoBehaviour, IArrow
             {
                 GameManager.instance.AddEvents(new CmdTakeDamage(collision.GetComponent<Actor>(), _owner.Damage));
                 Destroy(gameObject);
+                AudioManager.Instance.PlaySFX(5, 0.5f);
             }
             Destroy(gameObject);
         }

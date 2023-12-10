@@ -8,7 +8,6 @@ public class LumberjacController : Actor, IActor
     #region Parameters_Private
     [SerializeField] private LumberjacStates _lumberjacStates = LumberjacStates.patrol;
 
-
     private float _speed;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float distanceCheck;
@@ -38,6 +37,7 @@ public class LumberjacController : Actor, IActor
             if (_currentLife <= 0)
             {
                 gameObject.SetActive(false);
+                AudioManager.Instance.PlaySFX(6, 2f);
             }
         }
     }

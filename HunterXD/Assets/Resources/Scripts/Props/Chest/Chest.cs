@@ -42,6 +42,7 @@ public class Chest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _canOpen)
         {
+            AudioManager.Instance.PlaySFX(7);
             _anim.Play("GoldenChestOpen");
             _chestClosed = false;
             _canOpen = false;

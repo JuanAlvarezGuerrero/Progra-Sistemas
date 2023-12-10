@@ -24,6 +24,7 @@ public class Switch : MonoBehaviour
     {
         if (isActive && Input.GetKeyDown(KeyCode.E))
         {
+            AudioManager.Instance.PlaySFX(3);
             _imgSwitch[1].gameObject.SetActive(true);
             _imgSwitch[0].gameObject.SetActive(false);
             quicksort.RunQuicksort(objetosQuickSort, 0, objetosQuickSort.Length - 1);

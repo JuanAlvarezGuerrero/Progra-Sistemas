@@ -73,6 +73,7 @@ public class BatController : Actor
             }
             if (_currentLife <= 0)
             {
+                AudioManager.Instance.PlaySFX(9);
                 gameObject.SetActive(false);
                 RoseChangeLevel.SetActive(true);
             }

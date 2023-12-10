@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : Actor, IPlayer
 {
-    
     [SerializeField] private BaseStairsDropABB _baseStairsDropABB;
     [SerializeField] private BaseStairsDrop _baseStairsDrop;
     
@@ -102,6 +101,7 @@ public class PlayerController : Actor, IPlayer
     {
         if (Input.GetKeyDown(_attack))
         {
+            AudioManager.Instance.PlaySFX(2,1f);
             _anim.SetTrigger("isAttacking");
             _weapon.Shoot();
         }
@@ -148,6 +148,7 @@ public class PlayerController : Actor, IPlayer
     {
         if (collision.CompareTag("ObjetoPuzzle"))
         {
+            AudioManager.Instance.PlaySFX(1, 1f);
             Debug.Log("Objeto Puzzle");
             _baseStairsDropABB.Pila.Apilar(collision.gameObject);
             
@@ -155,6 +156,7 @@ public class PlayerController : Actor, IPlayer
         }
         else if(collision.CompareTag("ObjetoCola"))
         {
+            AudioManager.Instance.PlaySFX(1, 1f);
             Debug.Log("Objeto Cola");
             _baseStairsDrop._cola.Acolar(collision.gameObject);
             
@@ -162,11 +164,18 @@ public class PlayerController : Actor, IPlayer
         }
         else if(collision.CompareTag("Potion"))
         {
+            AudioManager.Instance.PlaySFX(0, 1f);
             GetLife(1);
         }
         if (collision.CompareTag("Enemy")||collision.CompareTag("Trap"))
         {
             TakeDamage(1);
+            AudioManager.Instance.PlaySFX(4);
+        }
+
+        if (collision.CompareTag("Portal"))
+        {
+            AudioManager.Instance.PlaySFX(10);
         }
     }
 }

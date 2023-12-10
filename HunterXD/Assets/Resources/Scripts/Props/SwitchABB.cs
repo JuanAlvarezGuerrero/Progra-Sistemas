@@ -35,6 +35,7 @@ public class SwitchABB : MonoBehaviour
     {
         if (isActive && Input.GetKeyDown(KeyCode.E))
         {
+            AudioManager.Instance.PlaySFX(3);
             _imgSwitch[1].gameObject.SetActive(true);
             _imgSwitch[0].gameObject.SetActive(false);
 

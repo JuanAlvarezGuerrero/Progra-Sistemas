@@ -28,6 +28,7 @@ public class BaseStairsDrop : MonoBehaviour
             {
                 if (index < 4)
                 {
+                    AudioManager.Instance.PlaySFX(8);
                     GameObject item = _cola.Primero();
                     item.transform.position = _stairPosition[index].position;
                     item.gameObject.SetActive(true);

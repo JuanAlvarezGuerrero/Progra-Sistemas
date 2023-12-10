@@ -20,9 +20,11 @@ public class Actor : MonoBehaviour, IDamagable
     public int CurrentLife => _currentLife;
     #endregion
 
+    public SimpleFlash sf;
     private void Start()
     {
         _currentLife = _stats.MaxLife;
+        sf=GetComponent<SimpleFlash>();
     }
 
     #region IDamagable_Methods
@@ -30,6 +32,7 @@ public class Actor : MonoBehaviour, IDamagable
     {
         _currentLife -= damage;
         uiProvider.ActorUIManager.UpdateActorHealth(actorID, _currentLife);
+        sf.Flash();
     }
     public void GetLife(int value)
     {

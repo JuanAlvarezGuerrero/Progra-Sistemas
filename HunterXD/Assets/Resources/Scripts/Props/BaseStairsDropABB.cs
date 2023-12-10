@@ -29,6 +29,7 @@ public class BaseStairsDropABB : MonoBehaviour
             {
                 if (index < 5)
                 {
+                    AudioManager.Instance.PlaySFX(8);
                     GameObject item = Pila.Tope();
                     item.transform.position = _stairPosition[index].position;
                     item.gameObject.SetActive(true);
