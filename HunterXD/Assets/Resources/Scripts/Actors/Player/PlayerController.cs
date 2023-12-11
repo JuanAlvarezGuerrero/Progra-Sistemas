@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class PlayerController : Actor, IPlayer
 {
     [SerializeField] private LifeBar _lifeBar;
+    [SerializeField] private ChargeAttackBar _attackBar;
     private float _deadTimer = 2f;
     [SerializeField] private LevelChanger _levelChanger; 
     private bool canAttack;
-    private bool canSpecialAttack;
     private float _cdShootArrow;
     [SerializeField] private float _cdShootSpecialArrow;
 
@@ -57,6 +57,7 @@ public class PlayerController : Actor, IPlayer
         pila.InicializarPila(4);
         _gravityScale = _rb.gravityScale;
         _lifeBar.InitLifeBar();
+        _attackBar.InitAttackBar();
     }
 
     private void Update()
@@ -64,6 +65,8 @@ public class PlayerController : Actor, IPlayer
         if (_playerState == PlayerStatesEnum.Alive)
         {
             IsAlive(_currentLife);
+            _lifeBar.ChangeCurrentLife(_currentLife);
+            _attackBar.UpdateChargeAttack(_cdShootSpecialArrow);
             Attack();
             SpecialAttack();
             Flip();
@@ -72,10 +75,6 @@ public class PlayerController : Actor, IPlayer
             if (_cdShootArrow < 0)
             {
                 canAttack = true;
-            }
-            if (_cdShootSpecialArrow < 0)
-            {
-                canSpecialAttack = true;
             }
 
             if (Input.GetKey(_jump))
@@ -175,19 +174,18 @@ public class PlayerController : Actor, IPlayer
     {
         if (Input.GetMouseButton(1))
         {
-            _cdShootSpecialArrow -= Time.deltaTime;
+            _cdShootSpecialArrow += Time.deltaTime;
         }
         if (Input.GetMouseButtonUp(1))
         {
-            if (_cdShootSpecialArrow <= -2)
+            if (_cdShootSpecialArrow >= 2)
             {
                 AudioManager.Instance.PlaySFX(2, 1f);
                 _anim.SetTrigger("isAttacking");
                 _weapon.SpecialShoot();
                 canAttack = false;
                 _cdShootArrow = 1.5f;
-                _cdShootSpecialArrow =2;
-                canSpecialAttack = false;
+                //_cdShootSpecialArrow =2;
                 _cdShootSpecialArrow = 0; 
             }
             else
@@ -258,12 +256,12 @@ public class PlayerController : Actor, IPlayer
         {
             AudioManager.Instance.PlaySFX(0, 1f);
             GetLife(1);
-            _lifeBar.ChangeCurrentLife(_currentLife);
+            //_lifeBar.ChangeCurrentLife(_currentLife);
         }
         if (collision.CompareTag("Enemy")||collision.CompareTag("Trap"))
         {
             TakeDamage(1);
-            _lifeBar.ChangeCurrentLife(_currentLife);
+            //_lifeBar.ChangeCurrentLife(_currentLife);
             AudioManager.Instance.PlaySFX(4);
         }
 
