@@ -2679,6 +2679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cdccfad5bd32e4d8d2a7094bd49920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameState: 0
   ObPause: {fileID: 0}
   Pause: 1
   player: {fileID: 0}
@@ -3855,7 +3856,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Nivel-Tutorial
+          m_StringArgument: Opening
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1822031703}
