@@ -180,7 +180,7 @@ public class PlayerController : Actor, IPlayer
         {
             if (_cdShootSpecialArrow >= 2)
             {
-                AudioManager.Instance.PlaySFX(2, 1f);
+                AudioManager.Instance.PlaySFX(12, 1f);
                 _anim.SetTrigger("isAttacking");
                 _weapon.SpecialShoot();
                 canAttack = false;
