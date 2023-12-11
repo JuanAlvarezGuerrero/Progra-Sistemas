@@ -307,7 +307,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &7780912164038311945
 BoxCollider2D:
@@ -351,6 +351,7 @@ MonoBehaviour:
   _currentLife: 0
   actorID: player
   sf: {fileID: 0}
+  _levelChanger: {fileID: 0}
   _baseStairsDropABB: {fileID: 0}
   _baseStairsDrop: {fileID: 0}
   pila: {fileID: 0}

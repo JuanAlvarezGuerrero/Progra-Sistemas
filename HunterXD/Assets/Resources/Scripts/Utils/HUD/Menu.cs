@@ -1,12 +1,19 @@
-using System.Collections;
+using System;using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum GameState{
+    inMenu,
+    inGame
+}
 
 public class Menu : MonoBehaviour
 {
+    public GameState GameState; 
+    
     #region PUBLIC_PARAMETERS
     public GameObject ObPause;
     public bool Pause = true;
@@ -18,31 +25,35 @@ public class Menu : MonoBehaviour
     #endregion
 
     #region UNITY_EVENTS
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (GameState == GameState.inGame)
         {
-            if (Pause == false)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                ObPause.SetActive(true);
-                Pause = true;
+                if (Pause == false)
+                {
+                    ObPause.SetActive(true);
+                    Pause = true;
 
-                Time.timeScale = 0;
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
+                    Time.timeScale = 0;
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else if (Pause == true)
+                {
+                    Restart();
+                }
             }
-            else if (Pause == true)
+            if (player.CurrentLife <= 0)
             {
-                Restart();
+                SceneManager.LoadScene(5);
             }
-        }
-        if (player.CurrentLife <= 0)
-        {
-            SceneManager.LoadScene(5);
-        }
-        if (lumberjac.CurrentLife <= 0)
-        {
-            SceneManager.LoadScene(4);
+            if (lumberjac.CurrentLife <= 0)
+            {
+                SceneManager.LoadScene(4);
+            }
         }
     }
     void Start()
