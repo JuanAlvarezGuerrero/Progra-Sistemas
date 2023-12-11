@@ -10,6 +10,7 @@ TagManager:
   - ObjetoCola
   - Trap
   - Portal
+  - DeadLine
   layers:
   - Default
   - TransparentFX

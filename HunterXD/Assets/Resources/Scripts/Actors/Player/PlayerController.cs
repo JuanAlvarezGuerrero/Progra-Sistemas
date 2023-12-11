@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : Actor, IPlayer
 {
+    private float _deadTimer = 2f;
+    [SerializeField] private LevelChanger _levelChanger; 
+    private bool canAttack;
+    private float _cdShootArrow;
+    
     [SerializeField] private BaseStairsDropABB _baseStairsDropABB;
     [SerializeField] private BaseStairsDrop _baseStairsDrop;
     
@@ -26,17 +31,28 @@ public class PlayerController : Actor, IPlayer
     private bool inFloor;
     private bool jumping;
     #endregion
-
+    
     #region Controls
     [Header("Controls")]
     [SerializeField] private KeyCode _jump = KeyCode.Space;
     [SerializeField] private KeyCode _attack = KeyCode.Mouse0;
     #endregion
 
+    #region CustomJump
+
+    [Range(0, 1)] [SerializeField] private float multiplierCancelJump;
+    [SerializeField] private float multiplierGravity;
+    private float _gravityScale;
+    private bool buttonJumpUp = true;
+
+    
+
+    #endregion
     private void Awake()
     {
         _playerStats = _stats as PlayerStats;
         pila.InicializarPila(4);
+        _gravityScale = _rb.gravityScale;
     }
 
     private void Update()
@@ -46,10 +62,20 @@ public class PlayerController : Actor, IPlayer
             IsAlive(_currentLife);
             Attack();
             Flip();
+            _cdShootArrow -= Time.deltaTime;
+            if (_cdShootArrow < 0)
+            {
+                canAttack = true;
+            }
 
-            if (Input.GetKeyDown(_jump))
+            if (Input.GetKey(_jump))
             {
                 jumping = true;
+            }
+
+            if (Input.GetKeyUp(_jump))
+            {
+                ButtonJumpUp();
             }
 
             if (Input.GetKeyDown(KeyCode.P))
@@ -66,6 +92,7 @@ public class PlayerController : Actor, IPlayer
 
             if (_currentLife <= 0)
             {
+                AudioManager.Instance.PlaySFX(11);
                 _playerState = PlayerStatesEnum.Dead;
             }
         }
@@ -73,20 +100,46 @@ public class PlayerController : Actor, IPlayer
         if(_playerState == PlayerStatesEnum.Dead)
         {
             _anim.SetTrigger("isDead");
-            SceneManager.LoadScene(5);
+            _rb.velocity = new Vector2(0, _rb.velocity.y);
+            
+            _deadTimer -= Time.deltaTime;
+            if (_deadTimer<0f)
+            {
+                _levelChanger.FadeToLevel(5);
+            }
         }
     }
 
+    private void ButtonJumpUp()
+    {
+        if (_rb.velocity.y > 0)
+        {
+            _rb.AddForce(Vector2.down * _rb.velocity.y * (1 - multiplierCancelJump), ForceMode2D.Impulse);
+        }
+
+        buttonJumpUp = true;
+        jumping = false;
+    }
     private void FixedUpdate()
     {
         if (_playerState == PlayerStatesEnum.Alive)
         {
             Vector2 dir= new Vector2( _horizontal = Input.GetAxisRaw("Horizontal"), _rb.velocity.y);
             Move(dir);
-            if (jumping && inFloor)
+            if (jumping && buttonJumpUp && inFloor)
             {
                 Jump();
             }
+
+            if (_rb.velocity.y < 0 && !inFloor)
+            {
+                _rb.gravityScale = _gravityScale * multiplierGravity;
+            }
+            else
+            {
+                _rb.gravityScale = _gravityScale;
+            }
+            
             jumping = false;
         }
     }
@@ -99,11 +152,13 @@ public class PlayerController : Actor, IPlayer
 
     public void Attack()
     {
-        if (Input.GetKeyDown(_attack))
+        if (Input.GetKeyDown(_attack) && canAttack)
         {
             AudioManager.Instance.PlaySFX(2,1f);
             _anim.SetTrigger("isAttacking");
             _weapon.Shoot();
+            _cdShootArrow = _playerStats.TimerShootArrow;
+            canAttack = false;
         }
     }
 
@@ -111,6 +166,8 @@ public class PlayerController : Actor, IPlayer
     {
         _rb.AddForce(Vector2.up * _playerStats.JumpingPower, ForceMode2D.Impulse);
         inFloor = false;
+        jumping = false;
+        buttonJumpUp = false;
     }
 
     public void SwitchPower()
@@ -176,6 +233,10 @@ public class PlayerController : Actor, IPlayer
         if (collision.CompareTag("Portal"))
         {
             AudioManager.Instance.PlaySFX(10);
+        }
+        if (collision.CompareTag("DeadLine")&& _playerState == PlayerStatesEnum.Alive)
+        {
+            AudioManager.Instance.PlaySFX(11);
         }
     }
 }

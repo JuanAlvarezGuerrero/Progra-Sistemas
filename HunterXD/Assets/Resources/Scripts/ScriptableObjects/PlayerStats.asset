@@ -21,3 +21,4 @@ MonoBehaviour:
     GroundLayer:
       serializedVersion: 2
       m_Bits: 192
+    TimerShootArrow: 0.5

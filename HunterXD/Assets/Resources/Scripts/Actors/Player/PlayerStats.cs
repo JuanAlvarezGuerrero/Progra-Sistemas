@@ -10,7 +10,7 @@ public class PlayerStats : ActorStats
     public float Speed => _statsPlayer.Speed;
     public float JumpingPower => _statsPlayer.JumpingPower;
     public LayerMask GroundLayer => _statsPlayer.GroundLayer;
-
+    public float TimerShootArrow => _statsPlayer.TimerShootArrow;
 }
 [System.Serializable]
 public struct PlayerStatValues
@@ -18,4 +18,5 @@ public struct PlayerStatValues
     public float Speed;
     public float JumpingPower;
     public LayerMask GroundLayer;
+    public float TimerShootArrow;
 }
