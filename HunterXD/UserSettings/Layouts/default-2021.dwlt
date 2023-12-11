@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 122
+  controlID: 79
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 80
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 81
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -487,10 +487,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 42}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ececfffff2ecffff20edffffd6faffffe86f00006c800000
+      m_ExpandedIDs: 46faffff4afaffffd8faffffdefaffff0cfbffffbe6c00001c6f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -795,9 +795,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 524.8861, y: 657.6288, z: -0.033447266}
+    m_Target: {x: 926.8478, y: 110.03267, z: 2.540463}
     speed: 2
-    m_Value: {x: 524.8861, y: 657.6288, z: -0.033447266}
+    m_Value: {x: 926.8478, y: 110.03267, z: 2.540463}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -848,9 +848,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 329.74475
+    m_Target: 945.6121
     speed: 2
-    m_Value: 329.74475
+    m_Value: 945.6121
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1008,23 +1008,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Scripts/Utils/HUD
+    - Assets/Resources/Images
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Resources/Scripts/Utils/HUD
+  - Assets/Resources/Images
   m_LastFoldersGridSize: 96
   m_LastProjectPath: E:\Github\Progra-Sistemas\HunterXD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 166}
-    m_SelectedIDs: e47d0000
-    m_LastClickedID: 32228
-    m_ExpandedIDs: 0000000080740000907d0000c07d0000d87d00003a8e000000ca9a3b
+    scrollPos: {x: 0, y: 134}
+    m_SelectedIDs: b0730000
+    m_LastClickedID: 29616
+    m_ExpandedIDs: 00000000907300009273000094730000a0730000a8730000b073000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1052,7 +1052,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080740000827400008474000086740000
+    m_ExpandedIDs: 00000000907300009273000094730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1080,7 +1080,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ec9b0000ee9b0000f29b000092670000c66300000460000048650000f267000052be00007aa000000000000056a80000c0770000507e0000247200004e0a0100660a0100b2720000c47c00002e7c0000fa7e00002a770000c07200000e68010016680100a2710000dc710000e67300009c7800004a780000
+    m_ExpandedInstanceIDs: c6230000ec9b0000ee9b0000f29b000092670000c66300000460000048650000f267000052be00007aa000000000000056a80000c0770000507e0000247200004e0a0100660a0100b2720000c47c00002e7c0000fa7e00002a770000c07200000e68010016680100a2710000dc710000e67300009c7800004a780000e6760000e4a00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
