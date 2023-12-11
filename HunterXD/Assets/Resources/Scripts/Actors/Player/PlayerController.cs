@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : Actor, IPlayer
 {
+    [SerializeField] private LifeBar _lifeBar;
     private float _deadTimer = 2f;
     [SerializeField] private LevelChanger _levelChanger; 
     private bool canAttack;
@@ -55,6 +56,7 @@ public class PlayerController : Actor, IPlayer
         _playerStats = _stats as PlayerStats;
         pila.InicializarPila(4);
         _gravityScale = _rb.gravityScale;
+        _lifeBar.InitLifeBar();
     }
 
     private void Update()
@@ -256,10 +258,12 @@ public class PlayerController : Actor, IPlayer
         {
             AudioManager.Instance.PlaySFX(0, 1f);
             GetLife(1);
+            _lifeBar.ChangeCurrentLife(_currentLife);
         }
         if (collision.CompareTag("Enemy")||collision.CompareTag("Trap"))
         {
             TakeDamage(1);
+            _lifeBar.ChangeCurrentLife(_currentLife);
             AudioManager.Instance.PlaySFX(4);
         }
 
