@@ -14277,7 +14277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7780912163657680803, guid: f4ebe73181d2d9e4e9765c16efd6d2f3, type: 3}
       propertyPath: _damage
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7780912164038311944, guid: f4ebe73181d2d9e4e9765c16efd6d2f3, type: 3}
       propertyPath: pila
@@ -14314,6 +14314,10 @@ PrefabInstance:
     - target: {fileID: 7780912164038311944, guid: f4ebe73181d2d9e4e9765c16efd6d2f3, type: 3}
       propertyPath: multiplierGravity
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780912164038311944, guid: f4ebe73181d2d9e4e9765c16efd6d2f3, type: 3}
+      propertyPath: _cdShootSpecialArrow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7780912164038311944, guid: f4ebe73181d2d9e4e9765c16efd6d2f3, type: 3}
       propertyPath: multiplierCancelJump

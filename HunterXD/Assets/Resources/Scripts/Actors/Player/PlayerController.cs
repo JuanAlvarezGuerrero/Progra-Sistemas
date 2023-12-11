@@ -10,8 +10,10 @@ public class PlayerController : Actor, IPlayer
     private float _deadTimer = 2f;
     [SerializeField] private LevelChanger _levelChanger; 
     private bool canAttack;
+    private bool canSpecialAttack;
     private float _cdShootArrow;
-    
+    [SerializeField] private float _cdShootSpecialArrow;
+
     [SerializeField] private BaseStairsDropABB _baseStairsDropABB;
     [SerializeField] private BaseStairsDrop _baseStairsDrop;
     
@@ -61,11 +63,17 @@ public class PlayerController : Actor, IPlayer
         {
             IsAlive(_currentLife);
             Attack();
+            SpecialAttack();
             Flip();
             _cdShootArrow -= Time.deltaTime;
+
             if (_cdShootArrow < 0)
             {
                 canAttack = true;
+            }
+            if (_cdShootSpecialArrow < 0)
+            {
+                canSpecialAttack = true;
             }
 
             if (Input.GetKey(_jump))
@@ -159,6 +167,31 @@ public class PlayerController : Actor, IPlayer
             _weapon.Shoot();
             _cdShootArrow = _playerStats.TimerShootArrow;
             canAttack = false;
+        }
+    }
+    public void SpecialAttack()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            _cdShootSpecialArrow -= Time.deltaTime;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            if (_cdShootSpecialArrow <= -2)
+            {
+                AudioManager.Instance.PlaySFX(2, 1f);
+                _anim.SetTrigger("isAttacking");
+                _weapon.SpecialShoot();
+                canAttack = false;
+                _cdShootArrow = 1.5f;
+                _cdShootSpecialArrow =2;
+                canSpecialAttack = false;
+                _cdShootSpecialArrow = 0; 
+            }
+            else
+            {
+                _cdShootSpecialArrow = 0;
+            }
         }
     }
 
