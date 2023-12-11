@@ -5,11 +5,6 @@ using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
-    
-    void Awake()
-    {
-        //_slider = GetComponent<Slider>();
-    }
 
     public void ChangeCurrentLife(float current)
     {
