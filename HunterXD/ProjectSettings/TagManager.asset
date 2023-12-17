@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - ObjetoCola
   - Trap
+  - Portal
+  - DeadLine
   layers:
   - Default
   - TransparentFX

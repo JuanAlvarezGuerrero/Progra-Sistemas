@@ -173,7 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 0
   _magSize: 0
-  _bulletCount: 0
   _weaponStats: {fileID: 11400000, guid: 35a38b222fcd0614d90a9518b2aee156, type: 2}
 --- !u!1 &7780912164038311956
 GameObject:
@@ -189,6 +188,8 @@ GameObject:
   - component: {fileID: 7780912164038311950}
   - component: {fileID: 7780912164038311945}
   - component: {fileID: 7780912164038311944}
+  - component: {fileID: 7871519247745798930}
+  - component: {fileID: 1013153665280612963}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -306,7 +307,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &7780912164038311945
 BoxCollider2D:
@@ -315,7 +316,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7780912164038311956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: c6f597e2a83cf4d4e917703eaf16df84, type: 2}
   m_IsTrigger: 0
@@ -348,7 +349,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: b9c69bbb899fadc4989f80d494b6cdb9, type: 2}
   _currentLife: 0
-  actorID: 
+  actorID: player
+  sf: {fileID: 0}
+  _levelChanger: {fileID: 0}
+  _baseStairsDropABB: {fileID: 0}
   _baseStairsDrop: {fileID: 0}
   pila: {fileID: 0}
   _weapon: {fileID: 7780912163657680803}
@@ -357,8 +361,37 @@ MonoBehaviour:
   _dimensionBox: {x: 0.5, y: 0.4}
   _anim: {fileID: 7780912164038311957}
   _rb: {fileID: 7780912164038311950}
-  _moveLeft: 97
-  _moveRight: 100
   _jump: 32
   _attack: 323
-  _changePower: 324
+  multiplierCancelJump: 0.6
+  multiplierGravity: 1.5
+--- !u!114 &7871519247745798930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7780912164038311956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddbf779a8a50e41b727bb2599cb454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: fdb9a3ba21dd1ef45955854751d48288, type: 2}
+  duration: 0.2
+--- !u!70 &1013153665280612963
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7780912164038311956}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c6f597e2a83cf4d4e917703eaf16df84, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.046808004, y: 1.4533}
+  m_Size: {x: 0.8908963, y: 2.9035435}
+  m_Direction: 0

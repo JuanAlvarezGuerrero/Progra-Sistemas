@@ -7,25 +7,31 @@ public class Weapon : MonoBehaviour, IWeapon
 {
     private ArrowFactory _arrowFactory;
     public WeaponStats WeaponStats => _weaponStats;
-    //public GameObject Bullet => _bullet;
 
     public int Damage => _damage;
 
     public int MagSize => _magSize;
-
-    //[SerializeField] protected GameObject _bullet;
+    
     [SerializeField] protected int _damage;
     [SerializeField] protected int _magSize;
-    [SerializeField] protected int _bulletCount;
     [SerializeField] private WeaponStats _weaponStats;
-    //[SerializeField] private WeaponShootBehavior shootBehavior;
+    [SerializeField] private float _damageBoost;
+    [SerializeField] private bool _applyDamage;
 
     private void Start()
     {
         BasicArrow currentArrow = _weaponStats.Arrow.GetComponent<BasicArrow>();
         _arrowFactory = new ArrowFactory(currentArrow);
     }
+    private void Update()
+    {
+        _damageBoost -= Time.deltaTime;
 
+        if (_damageBoost <= 0)
+        {
+            _damage = 2;
+        }
+    }
     public virtual void Shoot()
     {
         IProduct arrow = _arrowFactory.CreateProduct();
@@ -34,10 +40,14 @@ public class Weapon : MonoBehaviour, IWeapon
         arrowObject.transform.rotation = transform.rotation;
         arrowObject.GetComponent<BasicArrow>().SetOwner(this);
     }
-
-    public void ChangeArrow()
+    public virtual void SpecialShoot()
     {
-        throw new System.NotImplementedException();
+        _damage = 4;
+        IProduct arrow = _arrowFactory.CreateProduct();
+        GameObject arrowObject = arrow.MyGameObject;
+        arrowObject.transform.position = transform.position;
+        arrowObject.transform.rotation = transform.rotation;
+        arrowObject.GetComponent<BasicArrow>().SetOwner(this);
+        _damageBoost = 1.5f;
     }
-    
 }
