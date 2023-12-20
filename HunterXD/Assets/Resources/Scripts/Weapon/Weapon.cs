@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour, IWeapon
 
         if (_damageBoost <= 0)
         {
-            _damage = 2;
+            _damage = 1;
         }
     }
     public virtual void Shoot()
@@ -45,6 +45,7 @@ public class Weapon : MonoBehaviour, IWeapon
         _damage = 4;
         IProduct arrow = _arrowFactory.CreateProduct();
         GameObject arrowObject = arrow.MyGameObject;
+        arrowObject.GetComponent<SpriteRenderer>().sprite = _weaponStats.SpecialArrow;
         arrowObject.transform.position = transform.position;
         arrowObject.transform.rotation = transform.rotation;
         arrowObject.GetComponent<BasicArrow>().SetOwner(this);

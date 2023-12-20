@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: WeaponStats
   m_EditorClassIdentifier: 
   <Arrow>k__BackingField: {fileID: 985776181212191310, guid: 0778d31aab0b9e445a1bf71cbd548a46, type: 3}
+  <SpecialArrow>k__BackingField: {fileID: 21300000, guid: 897b86f84e076424f91e7d94766e58ae, type: 3}

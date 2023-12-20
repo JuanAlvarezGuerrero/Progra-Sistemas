@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stats:
     MaxLife: 5
-    MovementSpeed: 10
+    MovementSpeed: 5

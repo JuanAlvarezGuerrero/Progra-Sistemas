@@ -6,4 +6,5 @@ using UnityEngine;
 public class WeaponStats : ScriptableObject
 {
     [field: SerializeField] public GameObject Arrow { get; private set; }
+    [field: SerializeField] public Sprite SpecialArrow { get; private set; }
 }
